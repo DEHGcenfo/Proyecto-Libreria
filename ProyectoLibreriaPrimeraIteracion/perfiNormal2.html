@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/perfilEditable.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header-inicio">
+        <nav>
+            <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                <button type="submit" class="searchButton">
+                    Buscar
+                     <i class="fa fa-search"></i>
+                  </button>
+            </div>
+
+
+
+            <ul>
+                <li><a href="">Libros</a></li>
+                <li><a href="">Registro</a></li>
+                <li><a href="">Iniciar sesion</a></li>
+                <li> <a href="">Contactos</a></li>
+
+
+
+            </ul>
+            <input id="carrito" type="image" src="img/carrito de compras.png">
+
+        </nav>
+    </header>
+    <section id='seccionPrincipal'>
+        <form>
+
+            <div>
+
+                <h1 id="tituloPagina">Editar perfil del usuario</h1>
+            </div>
+            <section id='infoUsuario'>
+                <h1 id="tituloNombre">Nombre del Usuario</h1>
+                <div>
+
+                    <p class="nombreCasilla" id="indNombre"> Primer Nombre</p>
+
+                    <div>
+                        <p class="nombre" id="primerNombre"> Diana </p>
+                    </div>
+
+                </div>
+
+                <div>
+
+
+                    <p class="nombreCasilla" id="indSegNombre"> Segundo Nombre</p>
+                    <div>
+                        <p class="nombre" id="segundoNombre"> Maria </p>
+                    </div>
+
+
+                </div>
+
+                <div>
+
+                    <p class="nombreCasilla" id="indApellido"> Primer Apellido</p>
+                    <div>
+                        <p class="nombre" id="primerApellido">Acuña</p>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <p class="nombreCasilla" id="indSegApellido"> Segundo Apellido</p>
+                    <div>
+                        <p class="nombre" id="segundoApellido">Morales</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section id='container'>
+                <h1 class="header">Direccion</h1>
+                <div>
+
+                    <p class="direcciones" id="provincia">Provincia</p>
+                    <div>
+
+                        <p id="textProv" class="lugares">Heredia</p>
+
+                    </div>
+                </div>
+
+
+
+
+                <div>
+                    <p class="direcciones" id="cantones">Canton</p>
+                    <p id="listCant" class="lugares"> Belen</p>
+                </div>
+
+
+
+
+                <div>
+                    <p class="direcciones" id="distrito"> Distrito</p>
+                    <p id="listDis" class="lugares">La pastora</p>
+                </div>
+
+
+
+
+                </div>
+            </section>
+            <div class="mapouter">
+
+                <h4>Seleccione una ubicacion en el mapa</h4>
+
+                <div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=atenas&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.whatismyip-address.com/%22%3E</a><br>
+                            <a href=" https://www.embedgooglemap.net/%22%3Eembedgooglemap.net</a></a>
+                </div>
+            </div>
+
+
+            <section id="infoAbajo">
+                <div id="contInfoAbajo">
+                    <div class="abajoMapa">
+
+                        <p id="gender" class="etiquetaAbajo">Genero</p>
+                        <p id="genero" class="casillasAbajo">Mujer</p>
+
+                    </div>
+
+
+
+
+
+                    <div class="abajoMapa">
+                        <div>
+                            <p id="ID" class="etiquetaAbajo">Identificacion</p>
+                        </div>
+                        <div>
+                            <p id="Identificacion" class="casillasAbajo">2 0432 0288</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </section>
+
+            <section id="botones">
+
+                <div>
+                    <button id=metodpag class='tenth-btn'>Metodos de Pago</button>
+                </div>
+
+
+                <div>
+
+                    <button id="botonEditar" class='tenth-btn'>Editar perfil</button>
+
+                </div>
+
+            </section>
+
+
+            <section id="fotoUsuario">
+                <div id='imgUsuario'>
+                    <img src="/images/Diana.jpg" alt="Imagen de Perfil" id='fotoDePerfil'>
+
+                </div>
+            </section>
+
+        </form>
+    </section>
+
+
+    <footer id="pie-de-pagina">
+        <ul id="listaFooter">
+            <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+            <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+            <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+            <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+            <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+        </ul>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javascript/perfileditar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header id="header-inicio">
+            <nav>
+                <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                    <button type="submit" class="searchButton">
+                        Buscar
+                         <i class="fa fa-search"></i>
+                      </button>
+                </div>
+
+
+
+                <ul>
+                    <li><a class="linkHeader" href="listarLibros.html">Libros</a></li>
+                    <li><a class="linkHeader" href="registroUsuarios.html">Registrarse</a></li>
+                    <li><a class="linkHeader" href="inicioSesion.html">Iniciar Sesión</a></li>
+                    <li> <a class="linkHeader" href="contactos.html">Contactenos</a></li>
+
+
+
+                </ul>
+                <input id="carrito" type="image" src="img/carrito de compras.png">
+
+            </nav>
+        </header>
+
+    </div>
+
+    <div class="txtportada">
+        <div class="breadCrumbs">
+            <div><a href="landingPageGeneral.html"><button class="breadCrums">Inicio</button></a></div>
+
+
+        </div>
+        <h1>Contactenos</h1>
+
+        <h4>Envianos un mensaje</h4>
+    </div>
+    <section id="formContactos">
+
+        <div>
+            <input type="text" name="nombre" id="txtNombre" placeholder="Nombre">
+        </div>
+        <div>
+            <input type="email" name="correo" id="txtCorreo" placeholder="Correo">
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <div id="txtMensajes">
+        <textarea name="mensaje" id="txtMensaje" placeholder="Mensaje"></textarea>
+    </div>
+
+    <div>
+        <button type="submit" id="btnEnviar"> Enviar </button>
+
+
+
+
+
+        <footer id="pie-de-pagina">
+            <ul id="listaFooter">
+                <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+                <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+                <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+                <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+                <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+            </ul>
+        </footer>
+
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/validarContactos.js"></script>
+</body>
+
+
+
+</html>

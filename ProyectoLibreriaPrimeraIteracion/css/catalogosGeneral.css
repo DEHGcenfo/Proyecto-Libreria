@@ -1,0 +1,22 @@
+#contCatalogoGeneral {
+    width: 100%;
+    display: flex;
+}
+
+.contCatalogo {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 25px;
+}
+
+.fa-solid {
+    font-size: 40px;
+}
+
+.icon {
+    margin-left: 800px;
+}
+
+.tituloCatalogo {
+    width: 40%;
+}

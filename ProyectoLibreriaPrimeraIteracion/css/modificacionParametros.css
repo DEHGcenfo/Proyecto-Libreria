@@ -1,0 +1,216 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+.cont-titulo {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+.cont-titulo h1 {
+    color: #b34a12;
+    position: relative;
+    left: 800px;
+    top: 45px;
+}
+
+#sct-Parametros {
+    display: flex;
+    flex-direction: row;
+}
+
+#sct-izquierda {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#sct-derecha {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#sct-Parametros h1 {
+    color: #b34a12;
+}
+
+.cont-general {
+    width: 1400px;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex: row;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.cont-infoIzquierda {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 180px;
+}
+
+.cont-infoIzquierda h3 {
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+}
+
+.cont-infoDerecha {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-left: 250px;
+    padding-right: 20px;
+    padding-top: 80px;
+    width: 700px;
+    height: 150px;
+}
+
+.cont-infoDerecha h3 {
+    font-size: 15px;
+    position: relative;
+    left: 90px;
+    top: 50px;
+}
+
+.h3TarifaDescuentos {
+    font-size: 15px;
+    position: relative;
+    left: 120px;
+    top: 50px;
+}
+
+.subcont-infoDerecha {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 60px;
+    border-left: 2px solid gray;
+    padding-left: 110px;
+}
+
+.imgUsuarios {
+    position: relative;
+    bottom: 20px;
+    right: 88px;
+    width: 200px;
+    height: 150px;
+}
+
+.btnModificar {
+    background-color: #b34a12;
+    color: white;
+    margin-top: 60px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 90px;
+}
+
+.btnModificar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnPerfil {
+    background-color: #b34a12;
+    color: white;
+    margin-top: 60px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 90px;
+}
+
+.btnPerfil:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnInicio {
+    background-color: #b34a12;
+    color: white;
+    margin-top: 60px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 90px;
+}
+
+.btnInicio:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.breadCrums {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.breadCrums {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+}
+
+.breadCrums:hover {
+    background: #1e555d;
+}
+
+.breadCrumbs {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 120px;
+    top: 80px;
+}
+
+#btnModificar {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btnModificar:hover {
+    background: #1e555d;
+}
+
+#divBtnModificar {
+    padding-top: 35px;
+    display: flex;
+    justify-content: flex-end;
+}

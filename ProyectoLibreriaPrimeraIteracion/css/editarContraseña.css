@@ -1,0 +1,272 @@
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a:hover {
+    border-radius: 30%;
+    background-color: #fefbe2;
+    color: #000;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 62px;
+    padding-top: 2px;
+    margin-top: 1px;
+    text-decoration-line: overline;
+    text-decoration-color: red;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c92e03;
+    color: #fff;
+    height: 30%;
+    width: 5%;
+}
+
+button:hover {
+    background-color: #1e555d;
+}
+
+nav {
+    background-color: #b34a12;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrito {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 90px;
+}
+
+#logo-nav {
+    width: 10%;
+    height: 80%;
+    margin-left: 15px;
+}
+
+#search-nav {
+    height: 25%;
+    width: 35%;
+}
+
+#btn-libros {
+    height: center;
+    font-size: 20px;
+    color: #000;
+}
+
+#btn-carrito {
+    position: relative;
+    right: 80px;
+}
+
+#img-carrito {
+    background-color: #fff;
+    width: 20px;
+    height: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 75px;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 30px;
+}
+
+.search {
+    width: 35%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    padding: 5px;
+    height: 34px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchButton {
+    width: 80px;
+    height: 50px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: #fefbe2;
+    font-size: 15px;
+}
+
+.searchButton:hover {
+    background-color: #9e9d8c;
+    cursor: pointer;
+}
+
+#pie-de-pagina {
+    width: 100%;
+    height: 120px;
+    border: solid 2px black;
+    position: fixed;
+    bottom: 0;
+    background-color: #113a41;
+}
+
+#logo-footer {
+    width: 7%;
+    height: 60%;
+    margin-left: 15px;
+}
+
+#listaFooter li a {
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+
+/* Desde aqui inicia mis estilos de mi form
+*/
+
+.container {
+    padding-top: 1px;
+    width: 1000px;
+    padding: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background: #113a41;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.cont-form {
+    width: 800px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.password1 {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin: 12px;
+}
+
+.password2 {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin: 12px;
+}
+
+.button1:hover {
+    background: red;
+}
+
+.button2:hover {
+    background: rgb(130, 194, 35);
+}
+
+.button-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(170, 20, 20);
+    margin: 12px;
+    padding: 13px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: green;
+    color: white;
+    cursor: pointer;
+    margin: 12px;
+    padding: 13px;
+    border: none;
+}
+
+input[type=password] {
+    color: white;
+    border: solid white;
+    width: 100%;
+    background: none;
+}
+
+body {
+    background-color: #fefbe2;
+    color: #000;
+    min-height: 100vh;
+}
+
+.breadCrums {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.breadCrums {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+}
+
+.breadCrums:hover {
+    background: #1e555d;
+}
+
+.breadCrumbs {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 120px;
+    top: 80px;
+}

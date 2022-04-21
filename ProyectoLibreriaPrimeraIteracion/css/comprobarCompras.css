@@ -1,0 +1,317 @@
+body {
+    background-color: #fefbe2;
+    color: #000;
+}
+
+.linkHeader {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.linkHeader:hover {
+    border-radius: 30%;
+    background-color: #fefbe2;
+    color: #000;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background-color: #b34a12;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrito {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 90px;
+}
+
+#logo-nav {
+    width: 12%;
+    height: 90%;
+    margin-left: 15px;
+}
+
+#search-nav {
+    height: 25%;
+    width: 35%;
+}
+
+#btn-libros {
+    height: center;
+    font-size: 20px;
+    color: #000;
+}
+
+#btn-carrito {
+    position: relative;
+    right: 80px;
+}
+
+#img-carrito {
+    background-color: #fff;
+    width: 20px;
+    height: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 75px;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 30px;
+}
+
+.search {
+    width: 35%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    padding: 5px;
+    height: 34px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchButton {
+    width: 80px;
+    height: 50px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: #fefbe2;
+    font-size: 15px;
+}
+
+.searchButton:hover {
+    background-color: #9e9d8c;
+    cursor: pointer;
+}
+
+#pie-de-pagina {
+    width: 100%;
+    height: 120px;
+    border: solid 2px black;
+    position: relative;
+    bottom: -313px;
+    background-color: #113a41;
+}
+
+#logo-footer {
+    width: 7%;
+    height: 60%;
+    margin-left: 15px;
+}
+
+#listaFooter li a {
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+.btnNombre {
+    color: #000;
+}
+
+.btnNombre:hover {
+    color: blue;
+}
+
+.linkFooter {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.linkFooter:hover {
+    border-radius: 30%;
+    background-color: #fefbe2;
+    color: #000;
+}
+
+#contComprobarCompra {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#contIzquierda {
+    width: 50%;
+    height: 100%;
+}
+
+#contDerecha {
+    padding-top: 100px;
+    width: 50%;
+    height: 100%;
+}
+
+.subContIzquierda {
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+.subContDerecha {
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+.datosTarjeta {
+    padding-top: 15px;
+    margin-top: 20px;
+    width: 30%;
+    border: solid 2px black;
+}
+
+.datosTarjeta label {
+    width: 100%;
+}
+
+#puntosLF {
+    margin-top: 20px;
+}
+
+#puntosLF label {
+    border: solid 2px black;
+}
+
+#puntosLF button {
+    margin-left: 25px;
+}
+
+#botonPuntosLF {
+    width: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c92e03;
+    color: #fff;
+}
+
+#botonPuntosLF:hover {
+    background-color: #1e555d;
+}
+
+#botonComprar {
+    width: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c92e03;
+    color: #fff;
+}
+
+#botonComprar:hover {
+    background-color: #1e555d;
+}
+
+#botonCancelar {
+    width: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c92e03;
+    color: #fff;
+}
+
+#botonCancelar:hover {
+    background-color: #1e555d;
+}
+
+#subContDerechaBotones {
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+#subContDerechaBotones button {
+    margin-left: 10px;
+}
+
+.input-error {
+    border: 2px solid #B33771;
+}
+
+.breadCrums {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.breadCrums {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+}
+
+.breadCrums:hover {
+    background: #1e555d;
+}
+
+.breadCrumbs {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 120px;
+    top: 80px;
+    margin-bottom: 50px;
+}
+
+#subContDerechaBotones {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 80px;
+    margin-bottom: 50px;
+}
+
+#botonAgregar {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#botonAgregar:hover {
+    background: #1e555d;
+}
+
+.input-error {
+    border: 4px solid #B33771;
+}

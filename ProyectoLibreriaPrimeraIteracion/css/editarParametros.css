@@ -1,0 +1,32 @@
+.contGeneral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contInterior{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-weight: bold;
+
+}
+#editarTarifaDesc1{ 
+    margin-bottom: 40px;
+}
+
+#editarTarifaDesc2{ 
+    margin-bottom: 40px;
+}
+
+#editarTarifaDesc3{ 
+    margin-bottom: 40px;
+}
+
+#editarTarifaDesc4{ 
+    margin-bottom: 40px;
+}
+
+#tituloTarifa {
+    margin-bottom: 30px;
+}

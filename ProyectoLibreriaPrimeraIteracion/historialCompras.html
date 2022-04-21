@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/historialCompras.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header id="header-inicio">
+            <nav>
+                <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                    <button type="submit" class="searchButton">
+                        Buscar
+                         <i class="fa fa-search"></i>
+                      </button>
+                </div>
+
+
+
+                <ul>
+                    <li><a class="linkHeader" href="listarLibros.html">Libros</a></li>
+                    <li><a class="linkHeader" href="perfiNormal1.html">Perfil</a></li>
+                    <li><a class="linkHeader" href="landingPageGeneral.html">Cerrar sesión</a></li>
+                    <li> <a class="linkHeader" href="">Contactenos</a></li>
+
+
+                </ul>
+                <input id="carrito" type="image" src="img/carrito de compras.png">
+
+            </nav>
+        </header>
+
+    </div>
+
+    <section id="sectionHistorial">
+        <div class="breadCrumbs">
+            <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+            <div><a href="perfilAdmin.html"><button class="breadCrums">Perfil</button></a></div>
+
+        </div>
+        <h1 id="tituloHistorial">Lista de libros</h1>
+        <table id="tblHistorial">
+            <Thead id="thHistorial">
+                <tr>
+
+
+
+
+                </tr>
+
+            </Thead>
+
+            <tbody id="tbHistorial"></tbody>
+
+        </table>
+
+
+    </section>
+
+
+
+    <footer id="pie-de-pagina">
+        <ul id="listaFooter">
+            <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+            <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+            <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+            <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+            <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+        </ul>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/jsonHistorialCompras.js"></script>
+    <script src="js/historialCompras.js"></script>
+    <script src="js/botonHistorialCompras.js"></script>
+
+
+
+</body>
+
+
+
+</html>

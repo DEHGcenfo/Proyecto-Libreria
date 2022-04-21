@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/registroUsuarios.css">
+
+    <title>Registro de usuarios</title>
+</head>
+
+<body>
+    <section id="sctRegUsuarios">
+        <section id="sct1">
+            <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logoRegUsuarios">
+        </section>
+        <section id="sct2">
+            <h1>Registro de usuarios</h1>
+            <form>
+                <img src="img/Usuario5.PNG" alt="" id="imgUsuario">
+                <div id="divFile">
+                    <p id="textoBotonFoto">Añadir imagen</p>
+                    <input type="file" id="txt-fotoPerfil">
+                </div>
+
+
+                <div class="filaLabel">
+                    <div class="cont-control">
+                        <label for="">Tipo de usuario</label>
+                        <label for="">Nombre completo</label>
+                    </div>
+                </div>
+                <div class="filaInput">
+                    <div class="cont-control">
+                        <select id="slt-tipoUsuarios">
+                            <option value="">--Seleccione un tipo de usuario--</option>
+                            <option value="1">Administrador</option>
+                            <option value="2">Cliente</option>
+                            <option value="3">Instructor</option>
+                        </select>
+                        <input type="text" id="txt-nombre" placeholder="Nombre/Apellidos">
+                    </div>
+                </div>
+                <div class="filaLabel">
+                    <div class="cont-control">
+                        <label for="">Correo electronico</label>
+                        <label for="">Género</label>
+                    </div>
+                </div>
+                <div class="filaInput">
+                    <div class="cont-control">
+                        <input type="email" id="txt-correo" placeholder="Correo">
+                        <select id="slt-genero">
+                            <option value="">--Seleccione su género--</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filaLabel">
+                    <div class="cont-control">
+                        <label for="">Tipo de identificación</label>
+                        <label for="">Número de identificación</label>
+                    </div>
+
+                    <div class="filaInput">
+                        <div class="cont-control">
+                            <select id="slt-tipoId">
+                                    <option value="">--Seleccione el tipo de identificación--</option>
+                                    <option value="1">Cedula</option>
+                                    <option value="2">Pasaporte</option>
+                                    <option value="3">Residencia</option>
+                                </select>
+                            <input type="text" id="txt-identificacion" placeholder="ID">
+                        </div>
+                    </div>
+
+                    <div class="cont-control">
+                        <label id="txt-direccion" for="">Dirección</label>
+                    </div>
+                    <div class="cont-control">
+                        <select id="slt-provincias">
+                                <option value="">--Provincia--</option>
+                                <option value="1">Limón</option>
+                                <option value="2">Puntarenas</option>
+                                <option value="3">Guanacaste</option>
+                                <option value="4">Heredia</option>
+                                <option value="5">Cartago</option>
+                                <option value="6">Alajuela</option>
+                                <option value="7">San José</option>
+                                </select>
+
+                        <input class="canton" type="text" id="txt-canton" placeholder="Cantón">
+                        <input class="distrito" type="text" id="txt-distrito" placeholder="Distrito">
+
+                    </div>
+                    <div class="cont-controlDireccion">
+                        <input type="text" id="txt-direccionExacta" placeholder="Dirección exacta">
+                        <div class="mapaGoogle">
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4042191.942895982!2d-87.0526949583917!3d8.357011570790704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f92e56221acc925%3A0x6254f72535819a2b!2sCosta%20Rica!5e0!3m2!1ses!2scr!4v1649094474036!5m2!1ses!2scr"
+                                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                    <div class="filaLabel">
+                        <div class="cont-control">
+                            <label for="">Contraseña</label>
+                            <label label for="">Confirmacion</label>
+                        </div>
+                    </div>
+                    <div class="filaInput">
+                        <div class="cont-control">
+                            <input type="password" id="txt-contrasenna" placeholder="Contraseña">
+                            <input type="password" id="txt-confirmacion" placeholder="Confirmar contraseña">
+                        </div>
+                    </div>
+
+                    <div class="cont-control">
+                        <button type="button" id="btn-registrar" class="btnRegistrar">Registrar</button>
+
+                    </div>
+
+            </form>
+        </section>
+
+
+
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/registroUsuarios.js"></script>
+</body>
+
+</html>

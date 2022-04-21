@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ayuda.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <title>El Bazar de las sorpresas</title>
+</head>
+
+<body>
+    <header id="header-inicio">
+        <nav>
+            <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav" href="quienesSomos.html">
+
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                <button type="submit" class="searchButton">
+                        Buscar
+                         <i class="fa fa-search"></i>
+                      </button>
+            </div>
+
+
+
+            <ul>
+                <li><a class="linkHeader" href="listarLibros.html">Libros</a></li>
+                <li><a class="linkHeader" href="registroUsuarios.html">Registrarse</a></li>
+                <li><a class="linkHeader" href="inicioSesion.html">Iniciar Sesión</a></li>
+                <li> <a class="linkHeader" href="contactos.html">Contactenos</a></li>
+
+            </ul>
+
+            <input id="carrito" type="image" src="img/carrito de compras.png">
+
+        </nav>
+    </header>
+    <div id="textoAyuda">
+        <div class="breadCrumbs">
+
+            <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+
+        </div>
+        <h1>Ayuda</h1>
+    </div>
+    <div id="contPrincipal">
+        <div class="contAyuda">
+            <h1>Preguntas Frecuentes</h1>
+            <div id="preguntasFrecuentes">
+
+                <li class="listaPreguntas">¿Cómo realizar un pago?</li>
+                <p class="parrafo">Lo primero que debes hacer es añadir un libro al carrito, luego tienes que acceder al carrito de compras y tienes que seleccionar un metodo de pago y por ultimo dar click en "comprar"
+                </p>
+                <li class="listaPreguntas">¿Cómo eliminar un libro del carrito de compras</li>
+                <p class="parrafo">Para eliminar un libro del carrito de compras debes hacer click en el icono del basurero situado a la derecha del artículo</p>
+                <li class="listaPreguntas">¿Cómo modificar información del perfil</li>
+                <p class="parrafo">Para modificar la información del perfil debes acceder a tu perfil y hacer click en editar perfil en donde puedes editar tus datos personales</p>
+                <li class="listaPreguntas">¿Donde puedo retirar mi libro?</li>
+                <p class="parrafo">Nuestros puntos de retiro se encuentran en la sección "puntos de retiro" que puedes acceder desde la página principal </p>
+                <li class="listaPreguntas">¿Cómo acceder a la información de libros?</li>
+                <p class="parrafo">Al hacer click en cada libro podrás ver el perfil del libro.</p>
+                <li class="listaPreguntas">¿Cómo comunicarse con nosotros</li>
+                <p class="parrafo">En la página principal haciendo click en "contáctenos" podrás enviarnos un mensaje directamente a nuestro correo el cual responderemos en 24hr aproximadamente</p>
+
+            </div>
+        </div>
+        <div class="contAyuda">
+            <h1> ¿No encuentras lo que buscabas?</h1>
+
+            <form id="cuadroTexto" action="">
+                <div>
+                    <h2>¡Envianos un ticket!</h2>
+                    <textarea name="ticket" id="cuadroTicket" cols="60" rows="10"></textarea>
+                </div>
+            </form>
+            <div class="breadCrumbs">
+
+                <div><button class="breadCrums" type="submit" id="btnEnviar">Enviar</button></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <footer id="pie-de-pagina">
+        <ul id="listaFooter">
+            <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+            <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+            <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+            <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+            <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+        </ul>
+    </footer>
+    <script src="js/botonEnviar.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

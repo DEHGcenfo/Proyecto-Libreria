@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reporteVentasRangoFechas.css">
+    <script src="js/reporteVentasRangoDeFechas.js"></script>
+
+    <title>Reporte de ventas por rango de fecha</title>
+</head>
+
+
+<header id="header-inicio">
+    <nav>
+        <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+            <button type="submit" class="searchButton">
+                Buscar
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+
+
+        <ul>
+            <li><a class="linkHeader" href="perfilAdmin.html">Perfil</a></li>
+            <li><a class="linkHeader" href="catalogosGeneral.html">Catálogos</a></li>
+            <li><a class="linkHeader" href="reportesGenerales.html">Lista de Reportes</a></li>
+            <li> <a class="linkHeader" href="landingPageGeneral.html">Cerrar Sesión</a></li>
+        </ul>
+        <input id="carrito" type="image" src="img/carrito de compras.png">
+
+    </nav>
+</header>
+
+<body>
+    <div class="breadCrumbs">
+        <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+        <div><a href="reportesGenerales.html"><button class="breadCrums">Reportes</button></a></div>
+
+
+    </div>
+
+
+    <h1>Reporte de ventas por rango de fecha</h1>
+
+
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar por Mes..." class="inputMes">
+    <table id="myTable" class="center">
+        <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Año</th>
+                <th>Unidades vendidas</th>
+                <th>Total venta</th>
+                <th>Total Neto</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enero</td>
+                <td>2020</td>
+                <td> 69</td>
+                <td>$536.00</td>
+                <td>$236.00</td>
+
+            </tr>
+            <tr>
+                <td>Enero</td>
+                <td> 2022</td>
+                <td> 69</td>
+                <td>$5200.00</td>
+                <td>$4536.00</td>
+            </tr>
+            <tr>
+                <td>Marzo</td>
+                <td> 2021</td>
+                <td>263</td>
+                <td>$100.00</td>
+                <td>$89.72</td>
+            </tr>
+            <tr>
+                <td>Marzo</td>
+                <td> 2020</td>
+                <td> 69</td>
+                <td>$650.00</td>
+                <td>$536.99</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td> 2021</td>
+                <td> 69</td>
+                <td>$1800.00</td>
+                <td>$536.00</td>
+
+            </tr>
+            <tr>
+                <td>Junio</td>
+                <td> 2017</td>
+                <td> 69</td>
+                <td>$600.00</td>
+                <td>$536.00</td>
+                <tr>
+                    <td>Abril</td>
+                    <td> 2022</td>
+                    <td> 356</td>
+                    <td>$1200.00</td>
+                    <td>$536.00</td>
+                </tr>
+            </tr>
+
+            <tr>
+                <td>Agosto</td>
+                <td> 2019</td>
+                <td> 654</td>
+                <td>$5200.00</td>
+                <td>$536.00</td>
+            </tr>
+            <tr>
+                <td>Septiembre</td>
+                <td> 2019</td>
+                <td> 69</td>
+                <td>$200.00</td>
+                <td>$153.00</td>
+            </tr>
+            <tr>
+                <td>Agosto</td>
+                <td> 2022</td>
+                <td> 69</td>
+                <td>$200.00</td>
+                <td>$153.00</td>
+                <tr>
+                    <td>Nombriembre</td>
+                    <td> 2019</td>
+                    <td> 69</td>
+                    <td>$200.00</td>
+                    <td>$153.00</td>
+                    <tr>
+                        <td>Enero</td>
+                        <td> 2017</td>
+                        <td> 1769</td>
+                        <td>$8200.00</td>
+                        <td>$6536.00</td>
+                    </tr>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+    <footer id="pie-de-pagina">
+        <ul id="listaFooter">
+            <li><a href="landingPageEquipo.html">¿Quiénes somos?</a></li>
+            <li><a href="catalogoSociosComerciales.html">Socios comerciales</a></li>
+            <li><a href="puntosDeRetiro.html"> Puntos de retiro</a></li>
+            <li> <a href="landingPageEquipo">SkyTechCR Solutions</a></li>
+            <li> <a href="ayuda.html">Ayuda</a></li>
+
+        </ul>
+    </footer>
+
+    <script src="js/reporteVentasRangoDeFechas.js"></script>
+</body>

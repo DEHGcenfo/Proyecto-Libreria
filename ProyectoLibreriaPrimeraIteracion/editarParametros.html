@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/headerFooterParametros.css">
+    <link rel="stylesheet" href="css/editarParametros.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="contPrincipal">
+        <header id="header-inicio">
+            <nav>
+                <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav" href="landingPage.html">
+
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                    <button type="submit" class="searchButton">
+                            Buscar
+                             <i class="fa fa-search"></i>
+                          </button>
+                </div>
+
+
+
+                <ul>
+                    <li><a class="linkHeader" href="perfilAdmin.html">Perfil</a></li>
+                    <li><a class="linkHeader" href="catalogos.html">Catálogos</a></li>
+                    <li><a class="linkHeader" href="reportesGenerales.html">Lista de Reportes</a></li>
+                    <li> <a class="linkHeader" href="landingPageGeneral.html">Cerrar Sesión</a></li>
+
+
+
+                </ul>
+                <input id="carrito" type="image" src="img/carrito de compras.png">
+
+            </nav>
+        </header>
+
+        <div class="breadCrumbs">
+            <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+            <div><a href="perfilAdmin.html"><button class="breadCrums">Perfil</button></a></div>
+            <div><a href="modificacionParametros.html"><button class="breadCrums">Parámetros del sistema</button></a></div>
+
+        </div>
+
+        <div class="contGeneral">
+
+            <h1>Editar parametros del sistema</h1>
+            <div class="contInterior">
+                <label for="">Tasa de impuestos</label>
+                <div>
+                    <input type="number" id="editarImpuesto">
+                </div>
+                <div class="contInterior">
+                    <label for="">Cantidad minima de compras</label>
+                    <div>
+                        <input type="number" id="editarMinimoCompra">
+                    </div>
+                </div>
+
+                <div class="contInterior">
+                    <label for="">Costo de envio a domicilio</label>
+                    <div>
+                        <input type="number" id="editarEnvio">
+                    </div>
+                </div>
+                <div class="contInterior">
+                    <h2 id="tituloTarifa">Tarifa de descuentos</h2>
+
+                    <label for="">Tarifa de descuentos #1</label>
+                    <div>
+                        <input type="number" id="editarTarifaDesc1">
+                    </div>
+                    <label for="">Tarifa de descuentos #2</label>
+                    <div>
+                        <input type="number" id="editarTarifaDesc2">
+                    </div>
+                    <label for="">Tarifa de descuentos #3</label>
+                    <div>
+                        <input type="number" id="editarTarifaDesc3">
+                    </div>
+                    <label for="">Tarifa de descuentos #4</label>
+                    <div>
+                        <input type="number" id="editarTarifaDesc4">
+                    </div>
+                </div>
+
+                <div class="breadCrumbs">
+                    <div><button type="button" class="breadCrums" id="btnModificarParametros">Guardar cambios</button></div>
+                </div>
+            </div>
+            <footer id="pie-de-pagina">
+                <ul id="listaFooter">
+                    <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+                    <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+                    <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+                    <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+                    <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+                </ul>
+            </footer>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="js/editarParametros.js"></script>
+</body>
+
+</html>

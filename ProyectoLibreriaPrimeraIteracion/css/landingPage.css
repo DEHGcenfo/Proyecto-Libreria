@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fefbe2;
+    height: 100%;
+}
+
+#contPrincipal {
+    display: block;
+}
+
+.linkHeader {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 15px;
+    height: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.linkHeader:hover {
+    border-radius: 30%;
+    background-color: #fefbe2;
+    color: #000;
+}
+
+.linkFooter {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.linkFooter:hover {
+    border-radius: 30%;
+    background-color: #fefbe2;
+    color: #000;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background-color: #b34a12;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrito {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 90px;
+}
+
+#logo-nav {
+    width: 13%;
+    height: 10%;
+    margin-left: 15px;
+}
+
+#search-nav {
+    height: 25%;
+    width: 35%;
+}
+
+#btn-libros {
+    height: center;
+    font-size: 20px;
+    color: #000;
+}
+
+#btn-carrito {
+    position: relative;
+    right: 80px;
+}
+
+#img-carrito {
+    background-color: #fff;
+    width: 20px;
+    height: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 75px;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 30px;
+}
+
+.search {
+    width: 30%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    padding: 5px;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchButton {
+    width: 80px;
+    height: 50px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: #fefbe2;
+    font-size: 15px;
+}
+
+.searchButton:hover {
+    background-color: #9e9d8c;
+    cursor: pointer;
+}
+
+#pie-de-pagina {
+    width: 100%;
+    height: 120px;
+    border: solid 2px black;
+    position: relative;
+    bottom: -150px;
+    background-color: #113a41;
+}
+
+#logo-footer {
+    width: 7%;
+    height: 60%;
+    margin-left: 15px;
+}
+
+#listaFooter li a {
+    font-size: 15px;
+    margin-left: 60px;
+}
+
+#contCentral {
+    display: flex;
+    margin-top: 6%;
+    width: 100%;
+    height: 58%;
+}
+
+.titulosCentral1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.titulosCentral2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.lineaDivisora {
+    height: 2px;
+    background-color: #000;
+    border-width: 0;
+}
+
+#contTopLibros {
+    width: 50%;
+}
+
+.contInteriroTopLibros {
+    margin-top: 35px;
+    display: flex;
+    align-content: space-between;
+    height: 40%;
+}
+
+.topLibros {
+    width: 500px;
+    height: 300px;
+    text-align: center;
+}
+
+.imagenLibro {
+    width: 30%;
+    height: 60%;
+    margin-left: 15px;
+}
+
+#contLibrosOferta {
+    width: 50%;
+    display: flex;
+    align-content: space-between;
+}
+
+#contPrincDivDescuentos {
+    width: 100%;
+}
+
+#contDivDescuentos {
+    display: flex;
+    align-content: space-between;
+    height: 91.5%;
+}
+
+.divDescuentos {
+    width: 50%;
+}
+
+.librosDescuento {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: solid 8px #b34a12;
+}
+
+.contLibrosOfera {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+}
+
+.breadCrumbs {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.linkTopLibros {
+    font-weight: bold;
+    font-size: 18px;
+    color: #b34a12;
+    text-decoration: none;
+}
+
+.linkOfertas {
+    font-weight: bold;
+    font-size: 18px;
+    color: #b34a12;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.contInteriroTopLibros .topLibros h3 {
+    margin-bottom: 10px;
+}
+
+.breadCrums {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.breadCrums {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+}
+
+.breadCrums:hover {
+    background: #1e555d;
+}
+
+.breadCrumbs {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 120px;
+    top: 80px;
+}

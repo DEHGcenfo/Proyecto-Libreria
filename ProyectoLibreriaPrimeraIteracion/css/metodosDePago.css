@@ -1,0 +1,68 @@
+#sectionMetodosPago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 100%;
+    padding-top: 100px;
+}
+
+#tituloMetodosPago {
+    position: relative;
+    left: 400px;
+}
+
+#tblMetodosPago {
+    padding-bottom: 100px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-content: space-around;
+}
+
+thead {
+    background-color: #b34a12;
+    border: 2px solid black;
+}
+
+tbody {
+    background-color: #fefbe2;
+    border: 2px solid black;
+}
+
+.btnSelect {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.breadCrums {
+    height: 50px;
+    width: 115px;
+    height: 60px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.breadCrums {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+}
+
+.breadCrums:hover {
+    background: #1e555d;
+}
+
+.breadCrumbs {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 120px;
+    top: 80px;
+}

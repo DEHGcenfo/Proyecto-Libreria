@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/listarLibros.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header id="header-inicio">
+            <nav>
+                <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                    <button type="submit" class="searchButton">
+                        Buscar
+                         
+                      </button>
+                </div>
+
+
+
+                <ul>
+                    <li><a class="linkHeader" href="listarLibros.html">Libros</a></li>
+                    <li><a class="linkHeader" href="registroUsuarios.html">Registrarse</a></li>
+                    <li><a class="linkHeader" href="inicioSesion.html">Iniciar Sesión</a></li>
+                    <li> <a class="linkHeader" href="contactos.html">Contactenos</a></li>
+
+
+
+                </ul>
+                <input id="carrito" type="image" src="img/carrito de compras.png">
+
+            </nav>
+        </header>
+
+    </div>
+
+    <a href="landingPageGeneral.html" id="btnInicio"><button class="breadCrums">Inicio</button></a>
+    <section id="sectionListaLibro">
+        <div class="breadCrumbs">
+            <div><a href="listarGenerosLiterarios.html"><button class="breadCrums">Generos literarios</button></a></div>
+            <div><a href="Autores.html"><button class="breadCrums">Autores</button></a></div>
+
+        </div>
+        <h1 id="tituloListaLibros">Lista de libros</h1>
+        <table id="tbListaLibro">
+            <Thead id="thLibro">
+                <tr>
+
+                    <th>Foto</th>
+
+                    <th>Nombre</th>
+
+                    <th>Descripción</th>
+
+                    <th>Plumas</th>
+
+                    <th>Precio</th>
+
+
+                </tr>
+
+            </Thead>
+
+            <tbody id="tblContent"></tbody>
+
+        </table>
+
+
+    </section>
+
+
+
+    <footer id="pie-de-pagina">
+        <ul id="listaFooter">
+            <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+            <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+            <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+            <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+            <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+        </ul>
+    </footer>
+
+    <script src="js/registroLibros.js"></script>
+    <script src="js/listarLibros.js"></script>
+
+
+
+</body>
+
+
+
+</html>

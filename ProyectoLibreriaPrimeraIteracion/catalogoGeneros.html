@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/catalogoGeneros.css">
+    <script src="https://kit.fontawesome.com/223bb56ab8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header id="header-inicio">
+            <nav>
+                <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                    <button type="submit" class="searchButton">
+                        Buscar
+                         <i class="fa fa-search"></i>
+                      </button>
+                </div>
+
+
+
+                <ul>
+                    <li><a class="linkHeader" href="perfilAdmin.html">Perfil</a></li>
+                    <li><a class="linkHeader" href="catalogosGeneral.html">Catálogos</a></li>
+                    <li><a class="linkHeader" href="reportesGenerales.html">Lista de Reportes</a></li>
+                    <li> <a class="linkHeader" href="landingPageGeneral.html">Cerrar Sesión</a></li>
+                </ul>
+                <input id="carrito" type="image" src="img/carrito de compras.png">
+
+            </nav>
+        </header>
+
+    </div>
+
+    <section>
+        <div class="breadCrumbs">
+
+            <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+            <div><a href="catalogosGeneral.html"><button class="breadCrums">catalogos</button></a></div>
+
+        </div>
+        <h1>Generos literarios</h1>
+
+        <table id="tbFiccion">
+            <Thead id="thGenLit">
+                <tr>
+                    <div class="editarGenero">
+                        <h3 class="tituloGenLit">Ficción</h3>
+                    </div>
+
+
+
+                </tr>
+
+
+
+            </Thead>
+
+            <tbody id="tbGenero">
+
+            </tbody>
+
+
+        </table>
+        <table id="tbNoFiccion">
+            <Thead class="thGenLit">
+
+                <tr>
+                    <div class="editarGenero">
+                        <h3 class="tituloGenLit">No ficción</h3>
+
+
+                    </div>
+
+                </tr>
+
+
+            </Thead>
+
+            <tbody id="tbGenero">
+
+            </tbody>
+
+
+        </table>
+        <table id="tbEducacion">
+            <Thead class="thGenLit">
+
+
+                <div class="editarGenero">
+                    <h3 class="tituloGenLit">Educacion</h3>
+
+
+                </div>
+
+
+
+
+            </Thead>
+
+            <tbody id="tbGenero">
+
+            </tbody>
+
+
+        </table>
+
+
+    </section>
+
+
+
+    <footer id="pie-de-pagina">
+        <ul id="listaFooter">
+            <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+            <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+            <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+            <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+            <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+        </ul>
+    </footer>
+
+
+    <script src="js/jsonCatalogoGeneros.js"></script>
+    <script src="js/catalogoFiccion.js"></script>
+    <script src="js/catalogoNoFiccion.js"></script>
+    <script src="js/catalogoEducacion.js"></script>
+
+
+
+</body>
+
+
+
+</html>

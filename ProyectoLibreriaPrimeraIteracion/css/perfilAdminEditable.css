@@ -1,0 +1,665 @@
+.inputError {
+    border: 2px solid #B33771;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#infoUsuario {
+    display: flex;
+    flex-direction: row;
+}
+
+* {
+    font-family: Verdana, Arial;
+}
+
+body {
+    background-color: #fefbe2;
+    color: #000;
+}
+
+a {
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a:hover {
+    border-radius: 30%;
+    background-color: #fefbe2;
+    color: #000;
+}
+
+
+/*button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c92e03;
+    color: #fff;
+    height: 30%;
+    width: 5%;
+}
+
+button:hover {
+    background-color: #1e555d;
+}
+*/
+
+nav {
+    background-color: #b34a12;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrito {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 90px;
+}
+
+#logo-nav {
+    width: 10%;
+    height: 80%;
+    margin-left: 15px;
+}
+
+#search-nav {
+    height: 25%;
+    width: 35%;
+}
+
+#btn-libros {
+    height: center;
+    font-size: 20px;
+    color: #000;
+}
+
+#btn-carrito {
+    position: relative;
+    right: 80px;
+}
+
+#img-carrito {
+    background-color: #fff;
+    width: 20px;
+    height: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 75px;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 30px;
+}
+
+.search {
+    width: 35%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    padding: 5px;
+    height: 34px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchButton {
+    width: 80px;
+    height: 50px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: #fefbe2;
+    font-size: 15px;
+}
+
+.searchButton:hover {
+    background-color: #9e9d8c;
+    cursor: pointer;
+}
+
+#pie-de-pagina {
+    width: 100%;
+    height: 120px;
+    border: solid 2px black;
+    position: relative;
+    left: 0;
+    bottom: -90px;
+    width: 100%;
+    ;
+    background-color: #113a41;
+}
+
+#logo-footer {
+    width: 7%;
+    height: 60%;
+    margin-left: 15px;
+}
+
+#listaFooter li a {
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+.breadCrums {
+    height: 40px;
+    width: 75px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+}
+
+.breadCrums a {
+    font-size: 12px;
+}
+
+#tenth-btn {
+    background: #c93117;
+    border-radius: 30px;
+    z-index: 0;
+    overflow: hidden;
+    height: 45px;
+    width: 80px;
+    position: relative;
+    top: 400px;
+    right: 200px;
+    color: #fff;
+}
+
+#tenth-btn::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -200%;
+    left: -20%;
+    background: #1e555d;
+    border-radius: 50%;
+    transition: all 700ms linear;
+    transform: scale(0);
+    transform-origin: left;
+    z-index: -1;
+}
+
+#tenth-btn:hover:before {
+    transform: scale(1);
+}
+
+.breadCrums {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+}
+
+.breadCrums:hover {
+    background: #1e555d;
+}
+
+#seccionPrincipal {
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-right: 300px;
+}
+
+#primerNombre {
+    width: 350px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+
+#segundoNombre {
+    width: 350px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+
+#primerApellido {
+    width: 350px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+
+#segundoApellido {
+    width: 350px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+
+.nombre {
+    margin-left: 15px;
+    height: 25px;
+}
+
+.etiqueta {
+    margin-left: 15px;
+}
+
+.direcciones {
+    margin-left: 15px;
+}
+
+.header {
+    margin-right: 90px;
+}
+
+.lugares {
+    margin-left: 15px;
+}
+
+.labelAbajo {
+    margin-bottom: 50px;
+}
+
+#listCant {
+    width: 100px;
+}
+
+.casillasAbajo {
+    margin-bottom: 50px;
+}
+
+#genero {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+#contrasena {
+    margin-left: 17px;
+}
+
+#fotoUsuario {
+    position: relative;
+    left: 1150px;
+    bottom: 1460px;
+    width: 400px;
+    height: 400px;
+}
+
+#fotoDePerfil {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.mapouter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 825px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+
+#infoUsuario {
+    margin-bottom: 40px;
+}
+
+.labelAbajo {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.genero {
+    margin-bottom: 15px;
+}
+
+.header {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#tituloPagina {
+    font-size: 45px;
+    margin-bottom: 85px;
+}
+
+#container select {
+    width: 350px;
+    height: 30px;
+    font-size: 19px;
+}
+
+.casillasAbajo {
+    width: 800px;
+    height: 35px;
+}
+
+#genero {
+    width: 700px;
+    height: 45px;
+    font-size: 19px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+#identificacion {
+    width: 700px;
+    height: 38px;
+    margin-top: 20px;
+}
+
+#contrasena {
+    width: 700px;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+#metodPag {
+    width: 700px;
+    height: 45px;
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+.labels {
+    position: relative;
+    left: 110px;
+}
+
+.tenth-btn {
+    background: #c93117;
+    border-radius: 30px;
+    z-index: 0;
+    overflow: hidden;
+    height: 75px;
+    width: 100px;
+    position: relative;
+    left: 400px;
+    color: #fff;
+    font-size: 20px;
+    top: 75px;
+}
+
+.tenth-btn::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -200%;
+    left: -20%;
+    background: #1e555d;
+    border-radius: 50%;
+    transition: all 700ms linear;
+    transform: scale(0);
+    transform-origin: left;
+    z-index: -1;
+}
+
+.breadCrums {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.breadCrums {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+}
+
+.breadCrums:hover {
+    background: #1e555d;
+}
+
+.breadCrumbs {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 120px;
+    top: 80px;
+}
+
+.inputs {
+    width: 300px;
+    margin-top: 30px;
+}
+
+#infoAbajo {
+    width: 3000px;
+}
+
+div#divFile {
+    position: relative;
+    left: 110px;
+    text-align: center;
+    background-color: #b34a12;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 70px;
+    padding: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+}
+
+div#divFile:hover {
+    background-color: #1e555d;
+    border: 2px solid #000;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input#txt-fotoPerfil {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.btnEditar {
+    background-color: #b34a12;
+    color: white;
+    margin-top: 50px;
+    width: 1250px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.btnEditar:hover {
+    background-color: #1e555d;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.filasDeInputs {
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-metodosDePago {
+    margin-left: 30px;
+    border: 2px solid black;
+}
+
+.cont-nombres {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 65px;
+}
+
+.cont-apellidos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    position: relative;
+    left: 65px;
+}
+
+.cont-direcciones {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 65px;
+}
+
+.cont-direcciones h1 {
+    position: relative;
+    left: 150px;
+}
+
+.nombreUsuario {
+    position: relative;
+    left: 150px;
+}
+
+.cont-distrito {
+    position: relative;
+    top: 68px;
+    padding-bottom: 2px;
+    padding-left: 70px;
+    margin-left: 150px;
+    margin-bottom: 80px;
+}
+
+.cont-distrito p {
+    width: 200px;
+}
+
+.cont-canton {
+    margin-left: 60px;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    padding-bottom: 2px;
+    position: relative;
+    left: 65px;
+}
+
+#txt-direccionExacta {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: 85px;
+}
+
+.cont-controlDireccion {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px !important;
+}
+
+.lugares {
+    width: 716px;
+    height: 30px;
+    font-size: 19px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    border: #000;
+    background-color: #fff;
+    font-size: 22px;
+}
+
+.cont-genero {
+    position: relative;
+    left: 10px;
+}
+
+.cont-genero p {
+    position: relative;
+    left: 125px;
+}
+
+.cont-identificacion {
+    position: relative;
+    left: 600px;
+}
+
+.cont-identificacion p {
+    position: relative;
+    left: 145px;
+}
+
+.primerNombre {
+    margin-right: 200px;
+}
+
+.primerNombre p {
+    text-align: center;
+}
+
+.segundoNombre {}
+
+.segundoNombre p {
+    text-align: center;
+}
+
+.primerApellido {
+    margin-right: 200px;
+}
+
+.primerApellido p {
+    text-align: center;
+}
+
+.segundoApellido {}
+
+.segundoApellido p {
+    text-align: center;
+}
+
+.direccionExacta {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.direccionExacta h3 {
+    text-align: center;
+}
+
+.direccionExacta p {
+    margin-top: 100px;
+}
+
+#fotoUsuario p {
+    background-color: #b34a12;
+    font-size: 18px;
+}

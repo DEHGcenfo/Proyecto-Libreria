@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/perfilUsuario.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header-inicio">
+        <nav>
+            <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                <button type="submit" class="searchButton">
+                    Buscar
+                     <i class="fa fa-search"></i>
+                  </button>
+            </div>
+
+
+
+            <ul>
+                <li><a class="linkHeader" href="listarLibros.html">Libros</a></li>
+                <li><a class="linkHeader" href="perfiNormal1.html">Perfil</a></li>
+                <li><a class="linkHeader" href="landingPageGeneral.html">Cerrar sesión</a></li>
+                <li> <a class="linkHeader" href="contactos.html">Contactenos</a></li>
+
+            </ul>
+            <input id="carrito" type="image" src="img/carrito de compras.png">
+
+        </nav>
+    </header>
+    <div class="breadCrumbs">
+        <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+        <div><a href="perfilNormal1.html"><button class="breadCrums">Perfil</button></a></div>
+
+    </div>
+    <section id='seccionPrincipal'>
+        <form>
+
+            <div>
+
+                <h1 id="tituloPagina">Editar perfil del usuario</h1>
+            </div>
+            <section id='infoUsuario'>
+                <h1>Nombre del Usuario</h1>
+                <div>
+
+                    <label for="primerNombre" class="etiqueta">Primer nombre</label>
+
+                    <div>
+                        <input type="text" class="nombre" id="primerNombre">
+                    </div>
+
+                </div>
+
+                <div>
+
+
+                    <label for="segundoNombre" class="etiqueta">Segundo nombre</label>
+                    <div>
+                        <input type="text" class="nombre" id="segundoNombre">
+                    </div>
+
+
+                </div>
+
+                <div>
+
+                    <label for="primerApellido" class="etiqueta">Primer Apellido</label>
+                    <div>
+                        <input type="text" class="nombre" id="primerApellido">
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <label for="segundoApellido" class="etiqueta">Segundo Apellido</label>
+                    <div>
+                        <input type="text" class="nombre" id="segundoApellido">
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section id='container'>
+                <h1 class="header">Direccion</h1>
+                <div>
+
+                    <label for="listProv" class="direcciones">Provincia</label>
+                    <div>
+                        <select name="ListadeProvincia" id="listProv" class="lugares">
+                 <option value="">--Seleccione una Provincia--</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                
+                   
+                </select>
+                    </div>
+                </div>
+
+
+
+
+                <div>
+                    <label for="listCant" class="direcciones">Canton</label>
+                    <div>
+                        <select name="ListaDeCantones" id="listCant" class="lugares">
+
+                    <option value="">--Seleccione un canton--</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </select>
+                    </div>
+                </div>
+
+
+
+
+                <div>
+                    <label for="listDis" class="direcciones">Distrito</label>
+                    <div>
+                        <select name="listaDistritos" id="listDis" class="lugares">
+
+                    <option value="">--Seleccione un Distrito--</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </select>
+                    </div>
+                </div>
+
+
+
+
+                </div>
+            </section>
+            <div class="mapouter">
+
+                <h4>Seleccione una ubicacion en el mapa</h4>
+
+                <div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=atenas&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.whatismyip-address.com/%22%3E</a><br>
+                            <a href=" https://www.embedgooglemap.net/%22%3Eembedgooglemap.net</a></a>
+                </div>
+            </div>
+
+
+            <section id="infoAbajo">
+                <div>
+                    <label for="genero" class="labelAbajo">Genero</label>
+                    <select name="genero" id="genero" class="casillasAbajo">
+
+                <option value="">--Seleccione su genero--</option>
+                <option value="1">Hombre</option>
+                <option value="2">Mujer</option>
+                <option value="3">Otro</option>
+                </select>
+                </div>
+
+
+
+
+
+                <div>
+                    <label for="identificacion" class="labelAbajo">Identificacion</label>
+                    <input type="text" id="identificacion" class="casillasAbajo">
+                </div>
+                <div>
+                    <label for="contrasena" class="labelAbajo">Contrasena</label>
+                    <input type="password" id="contrasena" class="casillasAbajo">
+                </div>
+
+
+
+
+                <div>
+                    <label for="metodPag" class="labelAbajo">Metodos de pago</label>
+                    <select name="MetodosDePago" id="metodPag" class="casillasAbajo">
+
+                <option value="">--Seleccione un metodo--</option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+
+
+                </select>
+                </div>
+            </section>
+
+
+
+            <div>
+
+                <button type="button" id="botonGuardar" class='tenth-btn'>Guardar</button>
+
+            </div>
+
+            <section id="fotoUsuario">
+                <div id='imgUsuario'>
+                    <img src="/images/fotoPorDefecto.png" alt="Imagen de Perfil" id='fotoDePerfil'>
+                    <div>
+                        <label for="insertImage">Sube la foto de usuario</label>
+                        <div><input type="file" id="insertImage"></div>
+                    </div>
+                </div>
+            </section>
+
+        </form>
+    </section>
+
+
+    <footer id="pie-de-pagina">
+        <ul id="listaFooter">
+            <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+            <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+            <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+            <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+            <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+        </ul>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/perfileditar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a:hover {
+    border-radius: 30%;
+    background-color: #fefbe2;
+    color: #000;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(206, 37, 37);
+    padding-bottom: 62px;
+    padding-top: 12px;
+    margin-top: 13px;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c92e03;
+    color: #fff;
+    height: 30%;
+    width: 5%;
+}
+
+button:hover {
+    background-color: #1e555d;
+}
+
+nav {
+    background-color: #b34a12;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    position: relative;
+    top: 0px;
+    width: 100%
+}
+
+#carrito {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 90px;
+}
+
+#logo-nav {
+    width: 10%;
+    height: 80%;
+    margin-left: 15px;
+}
+
+#search-nav {
+    height: 25%;
+    width: 35%;
+    position: relative;
+    top: 30px;
+}
+
+#btn-libros {
+    height: center;
+    font-size: 20px;
+    color: #000;
+}
+
+#btn-carrito {
+    position: relative;
+    right: 80px;
+}
+
+#img-carrito {
+    background-color: #fff;
+    width: 20px;
+    height: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 75px;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 30px;
+}
+
+.search {
+    width: 35%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    padding: 5px;
+    height: 34px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    position: relative;
+    top: 30px;
+}
+
+.searchButton {
+    width: 80px;
+    height: 50px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: #fefbe2;
+    font-size: 15px;
+    position: relative;
+    top: 30px;
+
+}
+
+.searchButton:hover {
+    background-color: #9e9d8c;
+    cursor: pointer;
+}
+
+#pie-de-pagina {
+    width: 100%;
+    height: 120px;
+    border: solid 2px black;
+    position: relative;
+    bottom: -0px;
+    background-color: #113a41;
+}
+
+#logo-footer {
+    width: 7%;
+    height: 60%;
+    margin-left: 15px;
+}
+
+#listaFooter li a {
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid;
+    width: 40%;
+    background-color: #fefbe2;
+    color: black;
+    text-align: center;
+}
+
+img {
+    border: solid grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    padding: auto;
+    margin: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 100%/1.4 system-ui;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    scroll-behavior: smooth;
+    background-color: #fefbe2;
+    color: #000;
+ 
+}
+
+td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    /* Add a search icon to input */
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 20%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    /* Add some space below the input */
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px rgb(180, 140, 140);
+}
+
+.botonMeses {
+    border: none;
+}
+
+
+/* Style the list */
+
+ul.breadcrumb {
+    list-style: none;
+    background-color: #fefbe2;
+    margin-bottom: 30px;
+    border: 2px solid grey;
+}
+
+
+/* Display list items side by side */
+
+ul.breadcrumb li {
+    display: inline;
+    justify-content: flex-end;
+    font-size: 18px;
+    padding: 12px 20px 12px 40px;
+}
+
+
+/* Add a slash symbol (/) before/behind each list item */
+
+ul.breadcrumb li+li:before {
+    margin: 12px;
+    padding: 10px;
+    color: black;
+    content: "/\00a0";
+}
+
+
+/* Add a color to all links inside the list */
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* Add a color on mouse-over */
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.breadCrums {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.breadCrums {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+}
+
+.breadCrums:hover {
+    background: #1e555d;
+}
+
+.breadCrumbs {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 120px;
+    top: 80px;
+}

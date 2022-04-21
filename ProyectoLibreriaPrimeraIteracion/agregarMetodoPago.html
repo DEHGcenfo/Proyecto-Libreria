@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/comprobarCompras.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header id="header-inicio">
+            <nav>
+                <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                    <button type="submit" class="searchButton">
+                        Buscar
+                         <i class="fa fa-search"></i>
+                      </button>
+                </div>
+
+
+
+                <ul>
+                    <li><a class="linkHeader" href="listarLibros.html">Libros</a></li>
+                    <li><a class="linkHeader" href="perfiNormal1.html">Perfil</a></li>
+                    <li><a class="linkHeader" href="landingPageGeneral.html">Cerrar sesión</a></li>
+                    <li> <a class="linkHeader" href="contactos.html">Contactenos</a></li>
+
+
+                </ul>
+                <input id="carrito" type="image" src="img/carrito de compras.png">
+
+            </nav>
+        </header>
+
+
+        <div class="breadCrumbs">
+
+            <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+            <div><a href="carritoDeCompras.html"><button class="breadCrums">Carrito</button></a></div>
+
+        </div>
+        <div id="contComprobarCompra">
+
+            <div id="contIzquierda">
+                <div class="subContIzquierda">
+                    <h3>Agregar método de pago</h3>
+                </div>
+                <div class="subContIzquierda">
+                    <label for="">Nombre de la tarjeta:</label>
+
+                    <input type="text" id="nombreTarjeta">
+                </div>
+
+                <div class="subContIzquierda">
+                    <label for="">Número de la tarjeta : </label>
+
+                    <input type="text" id="numeroTarjeta">
+                </div>
+
+                <div class="subContIzquierda">
+                    <label for="">Fecha de expiración:</label>
+
+                    <input type="text" id="fechaExpiracion">
+
+                </div>
+            </div>
+
+
+
+            <div id="contDerecha">
+
+                <div class="subContDerecha">
+                    <label for="">Nombre del Usuario:</label>
+
+                    <input type="text" id="nombreUsuario">
+
+                </div>
+
+                <div class="subContDerecha">
+                    <label for="">Dirección/Residencia:</label>
+
+                    <input type="text" id="direccion">
+
+                </div>
+
+                <div class="subContDerecha">
+                    <label for="">Código de seguridad de la tarjeta(CVV)</label>
+                    <input type="text" placeholder="CVV" id="codigoCVV">
+                </div>
+                <div class="subContDerecha">
+
+                </div>
+                <div id="subContDerechaBotones">
+                    <button type="button" id="botonAgregar">Agregar</button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <footer id="pie-de-pagina">
+            <ul id="listaFooter">
+                <li><a href="" class="linkFooter">¿Quiénes somos?</a></li>
+                <li><a href="" class="linkFooter">Socios comerciales</a></li>
+                <li><a href="" class="linkFooter"> Puntos de retiro</a></li>
+                <li> <a href="" class="linkFooter">SkyTechCR Solutions</a></li>
+                <li> <a href="" class="linkFooter">Ayuda</a></li>
+
+
+
+            </ul>
+        </footer>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/agregarMetodoPago.js"></script>
+
+
+</body>
+
+</html>

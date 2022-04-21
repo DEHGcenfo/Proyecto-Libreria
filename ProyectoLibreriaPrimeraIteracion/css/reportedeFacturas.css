@@ -1,0 +1,313 @@
+body {
+    background-color: #fefbe2;
+    color: #000;
+}
+
+.linkHeader {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.linkHeader:hover {
+    border-radius: 30%;
+    background-color: #fefbe2;
+    color: #000;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background-color: #b34a12;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrito {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 90px;
+}
+
+#logo-nav {
+    width: 12%;
+    height: 90%;
+    margin-left: 15px;
+}
+
+#search-nav {
+    height: 25%;
+    width: 35%;
+}
+
+#btn-libros {
+    height: center;
+    font-size: 20px;
+    color: #000;
+}
+
+#btn-carrito {
+    position: relative;
+    right: 80px;
+}
+
+#img-carrito {
+    background-color: #fff;
+    width: 20px;
+    height: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 75px;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 30px;
+}
+
+.search {
+    width: 35%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    padding: 5px;
+    height: 34px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchButton {
+    width: 80px;
+    height: 50px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: #fefbe2;
+    font-size: 15px;
+}
+
+.searchButton:hover {
+    background-color: #9e9d8c;
+    cursor: pointer;
+}
+
+#pie-de-pagina {
+    width: 100%;
+    height: 120px;
+    border: solid 2px black;
+    position: relative;
+    bottom: -100px;
+    background-color: #113a41;
+}
+
+#logo-footer {
+    width: 7%;
+    height: 60%;
+    margin-left: 15px;
+}
+
+#listaFooter li a {
+    font-size: 15px;
+    margin-left: 30 px;
+    margin-right: 30px;
+}
+
+.btnNombre {
+    color: #000;
+}
+
+.btnNombre:hover {
+    color: blue;
+}
+
+.linkFooter {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.linkFooter:hover {
+    border-radius: 30%;
+    background-color: #fefbe2;
+    color: #000;
+}
+
+#sectionListaLibro {
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+}
+
+#tituloListaLibros {
+    font-size: 35px;
+    position: relative;
+    bottom: 60px;
+}
+
+#tbListaLibro {
+    border: solid 2px black;
+    width: 100%;
+}
+
+#thLibro {
+    color: black;
+    background-color: #fefbe2;
+}
+
+td {
+    text-align: center;
+    background-color: #fefbe2;
+}
+
+.fotoLibro {
+    width: 80px;
+    height: 120px;
+}
+
+.pluma {
+    width: 18px;
+    height: 18px;
+}
+
+.breadCrums {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 80px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.breadCrums {
+    background-color: #c93117;
+    border-bottom: 3px solid #1e555d;
+    transition: all 400ms ease-out;
+    color: white;
+    position: relative;
+    left: 1300px;
+    top: 90px;
+}
+
+.breadCrums:hover {
+    background: #1e555d;
+}
+
+.breadCrums a {
+    font-size: 12px;
+}
+
+#btnInicio {
+    position: relative;
+    top: 100px;
+    left: 1600px;
+}
+
+#tituloTablaFactura {
+    display: flex;
+    flex-direction: row;
+    padding-left: 65px;
+    margin-left: 18px;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.titulosLista {
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: #fefbe2;
+    margin-right: 15px;
+    padding-left: 20px;
+}
+
+#Factura1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.tenth-btn {
+    background: #c93117;
+    z-index: 0;
+    overflow: hidden;
+    height: 45px;
+    width: 200px;
+    color: #fff;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.tenth-btn::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -200%;
+    left: -20%;
+    background: #1e555d;
+    border-radius: 50%;
+    transition: all 700ms linear;
+    transform: scale(0);
+    transform-origin: left;
+    z-index: -1;
+}
+
+.tenth-btn:hover:before {
+    transform: scale(1);
+}
+
+.nombreDelArticulo {
+    margin-left: 40px;
+    width: 400px;
+    text-decoration: none;
+}
+
+.contenedorInfo {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+}
+
+.facturas {
+    text-decoration: none;
+}
+
+.breadCrumbs{
+    display: flex;
+    flex-direction: row;
+}
+
