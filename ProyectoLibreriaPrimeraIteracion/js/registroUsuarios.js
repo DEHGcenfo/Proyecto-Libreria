@@ -13,29 +13,22 @@ const inputContrasenna = document.getElementById("txt-contrasenna")
 const inputConfirmacion = document.getElementById("txt-confirmacion")
 
 
-const imprimir = () => {
-    let tipoUsuario = listaUsuarios.value;
-    let correo = inputCorreo.value;
-    let nombre = inputNombre.value;
-    let genero = listaGeneros.value;
-    let tipoId = listaTiposId.value;
-    let identificacion = inputIdentificacion.value;
-    let provincias = listaProvincias.value;
-    let canton = inputCanton.value;
-    let distrito = inputDistrito.value;
-    let direccionExacta = inputDireccionExacta.value;
+const registrarUsuario = () => {
 
-    console.log("El tipo de usuarios es: ", tipoUsuario);
-    console.log("El correo es: ", correo);
-    console.log("El nombre es: ", nombre);
-    console.log("El genero es: ", genero);
-    console.log("El tipo de id es: ", tipoId);
-    console.log("La identificacón es: ", identificacion);
-    console.log("La provincia es: ", provincias);
-    console.log("El cantón es: ", canton);
-    console.log("El distrito es: ", distrito);
-    console.log("La dirección exacta es: ", direccionExacta);
 
+    let data = {
+        tipoUsuario: listaUsuarios.value,
+        nombre: inputNombre.value,
+        correo: inputCorreo.value,
+        genero: listaGeneros.value,
+        tipoId: listaTiposId.value,
+        identificacion: inputIdentificacion.value,
+        provincias: listaProvincias.value,
+        canton: inputCanton.value,
+        distrito: inputDistrito.value,
+        direccionExacta: inputDireccionExacta.value
+    }
+    registrarDatos("registrar-usuario", data)
 };
 
 const validar = () => {
@@ -124,7 +117,7 @@ const validar = () => {
             "text": "Porfavor revise su correo electrónico"
         })
 
-        imprimir();
+        registrarUsuario();
     }
 
 
