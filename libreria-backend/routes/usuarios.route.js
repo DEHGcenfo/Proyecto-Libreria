@@ -13,7 +13,7 @@ router.post('/registrar-usuario', (req, res) => {
         correo: req.body.correo,
         genero: req.body.genero,
         tipoId: req.body.tipoId,
-        numeroId: req.body.numeroId,
+        identificacion: req.body.identificacion,
         provincia: req.body.provincia,
         canton: req.body.canton,
         distrito: req.body.distrito,
