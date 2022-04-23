@@ -23,6 +23,7 @@ const registrarUsuario = () => {
         genero: listaGeneros.value,
         tipoId: listaTiposId.value,
         identificacion: inputIdentificacion.value,
+        numeroId: inputIdentificacion.value,
         provincia: listaProvincias.value,
         canton: inputCanton.value,
         distrito: inputDistrito.value,

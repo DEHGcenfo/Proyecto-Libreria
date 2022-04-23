@@ -14,6 +14,7 @@ router.post('/registrar-usuario', (req, res) => {
         genero: req.body.genero,
         tipoId: req.body.tipoId,
         identificacion: req.body.identificacion,
+        numeroId: req.body.numeroId,
         provincia: req.body.provincia,
         canton: req.body.canton,
         distrito: req.body.distrito,

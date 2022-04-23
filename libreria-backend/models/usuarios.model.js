@@ -9,6 +9,7 @@ const schemaRegistroUsuario = new mongoose.Schema({
     genero: { type: Number, required: true },
     tipoId: { type: Number, required: true },
     identificacion: { type: String, required: true, unique: true },
+    numeroId: { type: String, required: true, unique: true },
     provincia: { type: String, required: true },
     canton: { type: String, required: true },
     distrito: { type: String, required: true },
