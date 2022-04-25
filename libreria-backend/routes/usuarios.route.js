@@ -50,4 +50,7 @@ router.get('/listar-usuarios', (req, res) => {
         }
     })
 })
+
+
+
 module.exports = router
