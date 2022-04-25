@@ -16,4 +16,4 @@ const schemaRegistroLibros = new mongoose.Schema({
     precio: { type: String, required: true },
 
 });
-module.exports = new mongoose.model('Libro', schemaRegistroUsuario, 'libros');
+module.exports = new mongoose.model('Libro', schemaRegistroLibros, 'libros');
