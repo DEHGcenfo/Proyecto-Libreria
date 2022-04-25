@@ -13,6 +13,7 @@ router.post('/registrar-usuario', (req, res) => {
         correo: req.body.correo,
         genero: req.body.genero,
         tipoId: req.body.tipoId,
+        identificacion: req.body.identificacion,
         numeroId: req.body.numeroId,
         provincia: req.body.provincia,
         canton: req.body.canton,
@@ -49,4 +50,7 @@ router.get('/listar-usuarios', (req, res) => {
         }
     })
 })
+
+
+
 module.exports = router
