@@ -55,8 +55,12 @@ function handleError(res, reason, message, code) {
 // Conexión a todas la rutas.
 //Falta agregar una forma de que el error se encuentre y se cambie la route a buscar
 
+<<<<<<< HEAD
 app.use('/api', require('./routes/usuarios.route' &&
     './routes/autores.route' &&
     './routes/sociosComerciales.route'
 
 ))
+=======
+app.use('/api', require('./routes/usuarios.route' && './routes/autores.route' && './routes/libros.route'))
+>>>>>>> 8816179807aa4293cfef3327f16e6ee0b2d2b90c

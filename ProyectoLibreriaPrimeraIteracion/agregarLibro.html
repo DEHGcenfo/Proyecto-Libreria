@@ -49,34 +49,62 @@
             <h1>Editar perfil del libro</h1>
             <form>
                 <label for="tituloDelLibro ">Nombre del libro </label>
-                <div><input type="text " id="tituloDelLibro "></div>
+                <div><input type="text " id="tituloDelLibro"></div>
                 <section id="sectionPerfil ">
                     <div>
                         <label for="insertImage ">Subir la portada del libro.</label>
-                        <div><input type="file " id="insertImage "></div>
+                        <div><input type="file" id="insertImage"></div>
                     </div>
 
                     <div>
                         <label for="nombreAutor ">Nombre del autor</label>
-                        <div><input type="text " id="nombreAutor "></div>
+                        <div><input type="text " id="nombreAutor"></div>
+                    </div>
+
+                    <div>
+                        <label for="codigoISBN ">ISBN</label>
+                        <div><input type="number" id="codigoISBN"></div>
+                    </div>
+                    <div>
+                        <label for="fechaPublicacion ">Fecha de publicacion</label>
+                        <div><input type="date" id="fechaPublicacion"></div>
+                    </div>
+                    <div>
+                        <label for="nombreEditorial ">Nombre de la editorial</label>
+                        <div><input type="text " id="nombreEditorial"></div>
+                    </div>
+                    <div>
+                        <label for="premios">Premios ganados</label>
+                        <div><input type="text" id="premios"></div>
+                    </div>
+                    <div>
+                        <label for="idioma">Idioma</label>
+                        <div><input type="text " id="idioma"></div>
+                    </div>
+                    <div>
+                        <label for="generoLiterario">Genero Literario</label>
+                        <div><input type="text" id="generoLiterario"></div>
+                    </div>
+                    <div>
+                        <label for="formatoLibro">Formato del libro</label>
+                        <div><input type="text " id="formatoLibro"></div>
+                    </div>
+
+                    <div>
+                        <label for="resenna">Reseña libro</label>
+                        <div><input type="text" id="resenna"></div>
+                    </div>
+
+                    <div>
+                        <label for="precioLibro">Precio del libro</label>
+                        <div><input type="text " id="precioLibro" placeholder="Colones"></div>
                     </div>
 
 
 
 
-                    <div id="informacionLibro ">
-                        <label for="resenaLibro ">Reseña del libro</label>
-                        <div><input type="text " id="resenaLibro " placeholder="Ingrese la reseña del libro "></div>
-                        <label for="detallesLibro ">Detalles del libro</label>
-                        <div>
 
-                            <input type="text " id="detallesLibro " placeholder="Ingrese detalles como codigo ISBN, Fecha de publicacion, Editorial, Premios, Idioma, Generos ">
-
-                        </div>
-
-                    </div>
-
-                    <button id="tenth-btn " type="button ">Guardar cambios</button>
+                    <div><button id="agregarLibro" type="button">Agregar libro</button></div>
 
 
                 </section>
@@ -97,8 +125,10 @@
 
 
 
-        <script src="https//cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
-        <script src="js/editarPerfilLibro.js "></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/servicioGeneral.js"></script>
+        <script src="js/agregarLibro.js "></script>
 
 </body>
 
