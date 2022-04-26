@@ -1,5 +1,5 @@
 const express = require('express')
-const sociosComerciales = require('../models/sociosComerciales.model')
+const socioComercial = require('../models/sociosComerciales.model')
     // router permite redireccionar la direcciones que vienen desde el front-end
 const router = express.Router()
 
@@ -9,10 +9,10 @@ router.post('/registrar-sociosComerciales', (req, res) => {
     let nuevoSocioComercial = new socioComercial({
 
 
-        nombre: req.body.nombre,
-        id: req.body.id,
-        ubicacion: req.body.ubicacion,
-        telefono: req.body.telefono,
+        nombreSocio: req.body.nombreSocio,
+        logoSocio: req.body.logoSocio,
+        ubicacionSocio: req.body.ubicacionSocio,
+        telefonoSocio: req.body.telefonoSocio,
 
 
     })

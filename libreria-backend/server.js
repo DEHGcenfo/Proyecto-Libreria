@@ -56,6 +56,7 @@ function handleError(res, reason, message, code) {
 //Falta agregar una forma de que el error se encuentre y se cambie la route a buscar
 
 app.use('/api', require('./routes/usuarios.route' &&
-    './routes/autores.route'
+    './routes/autores.route' &&
+    './routes/sociosComerciales.route'
 
 ))
