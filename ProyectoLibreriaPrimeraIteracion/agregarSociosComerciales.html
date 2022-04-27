@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agregarSociosComerciales.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header id="header-inicio">
+            <nav>
+                <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                    <button type="submit" class="searchButton">
+                        Buscar
+                         <i class="fa fa-search"></i>
+                      </button>
+                </div>
+
+
+
+                <ul>
+                    <li><a class="linkHeader" href="listarLibros.html">Libros</a></li>
+                    <li><a class="linkHeader" href="perfiNormal1.html">Perfil</a></li>
+                    <li><a class="linkHeader" href="landingPageGeneral.html">Cerrar sesión</a></li>
+                    <li> <a class="linkHeader" href="contactos.html">Contactenos</a></li>
+
+
+                </ul>
+                <input id="carrito" type="image" src="img/carrito de compras.png">
+
+            </nav>
+        </header>
+
+
+        <div class="breadCrumbs">
+
+            <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+            <div><a href="carritoDeCompras.html"><button class="breadCrums">Carrito</button></a></div>
+
+        </div>
+        <div id="contAgregarSocioComercial">
+
+            <h1>Agregar socio comercial</h1>
+            <form>
+                <label for="tituloAutor">Nombre del socio </label>
+                <div><input type="text" id="nombreSocio"></div>
+                <section id="sectionPerfil">
+                    <div>
+                        <label for="insertImage">Subir logo del socio</label>
+                        <div><input type="file" id="insertImage"></div>
+                    </div>
+
+                    <div>
+                        <label for="ubicacionSocio">Ubicacion del socio</label>
+                        <div><input type="text" id="ubicacionSocio"></div>
+                    </div>
+
+
+
+
+                    <div id="informacionLibro">
+                        <label for="resenaAutor">Numero de telefono</label>
+                        <div><input type="number" id="numeroSocio"></div>
+
+
+                    </div>
+
+
+
+                    <div><button id="tenth-btn" type="button">Agregar socio</button></div>
+        </div>
+
+    </div>
+
+    <footer id="pie-de-pagina">
+        <ul id="listaFooter">
+            <li><a href="" class="linkFooter">¿Quiénes somos?</a></li>
+            <li><a href="" class="linkFooter">Socios comerciales</a></li>
+            <li><a href="" class="linkFooter"> Puntos de retiro</a></li>
+            <li> <a href="" class="linkFooter">SkyTechCR Solutions</a></li>
+            <li> <a href="" class="linkFooter">Ayuda</a></li>
+
+
+
+        </ul>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicioGeneral.js"></script>
+    <script src="js/agregarSocioComercial.js"></script>
+
+    <script></script>
+
+
+</body>
+
+</html>
