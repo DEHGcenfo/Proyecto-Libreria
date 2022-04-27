@@ -61,3 +61,5 @@ function handleError(res, reason, message, code) {
 app.use('/api', require('./routes/autores.route'));
 app.use('/api', require('./routes/libros.route'))
 app.use('/api', require('./routes/usuarios.route'));
+app.use('/api', require('./routes/metodoDePago.route'));
+app.use('/api', require('./routes/sociosComerciales.route'));

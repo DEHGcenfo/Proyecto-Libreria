@@ -1,5 +1,5 @@
 const express = require('express')
-const metodoDePago = require('../models/autores.model')
+const metodoDePago = require('../models/metodosDePago.model')
     // router permite redireccionar la direcciones que vienen desde el front-end
 const router = express.Router()
 
