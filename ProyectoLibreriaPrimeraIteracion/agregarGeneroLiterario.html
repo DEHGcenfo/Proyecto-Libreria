@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agregarGeneroLiterario.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header id="header-inicio">
+            <nav>
+                <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
+
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                    <button type="submit" class="searchButton">
+                        Buscar
+                         <i class="fa fa-search"></i>
+                      </button>
+                </div>
+
+
+
+                <ul>
+                    <li><a class="linkHeader" href="perfilAdmin.html">Perfil</a></li>
+                    <li><a class="linkHeader" href="catalogosGeneral.html">Catálogos</a></li>
+                    <li><a class="linkHeader" href="reportesGenerales.html">Lista de Reportes</a></li>
+                    <li> <a class="linkHeader" href="landingPageGeneral.html">Cerrar Sesión</a></li>
+                </ul>
+                <input id="carrito" type="image" src="img/carrito de compras.png">
+
+            </nav>
+        </header>
+
+        <section id="formulario">
+            <div class="breadCrumbs">
+                <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+                <div><a href="listarLibros.html"><button class="breadCrums">Libros</button></a></div>
+                <div><a href="Autores.html"><button class="breadCrums">Autores</button></a></div>
+
+
+            </div>
+            <div id="contenido">
+            <h1 id="titulo">Agregar genero literario</h1>
+            <form>
+                <label for="nombreGenero">Nombre del genero literario</label>
+                <div><input type="text" id="nombreGenero"></div>
+                <section id="sectionPerfil">
+                    <div>
+                        <label for="insertImage">Sube la foto del genero literario</label>
+                        <div><input type="file" id="insertImage"></div>
+                    </div>
+
+                    <div>
+                        <label for="descripcionGenero">Descripcion del genero literario</label>
+                        <div><input type="text" id="premiosAutor"></div>
+                    </div>
+
+
+
+                    <div><button id="tenth-btn" type="button">Guardar cambios</button></div>
+
+                </div>
+                </section>
+            </form>
+        </section>
+        <footer id="pie-de-pagina">
+            <ul id="listaFooter">
+                <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+                <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+                <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+                <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+                <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+            </ul>
+        </footer>
+
+        <script src="https//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/agregarGeneroLiterario.js"></script>
+
+</body>
+
+
+
+</html>

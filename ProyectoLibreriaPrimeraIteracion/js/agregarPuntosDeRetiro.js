@@ -11,7 +11,7 @@ const registrarPuntoDeRetiro = () => {
     let data = {
         nombre: inputNombre.value,
         provincia: listaProvincias.value,
-        direccionExtacta: inputDireccion.value,
+        direccionExacta: inputDireccion.value,
         correo: inputCorreo.value,
         telefono: inputTelefono.value
 
