@@ -6,20 +6,16 @@ const inputMensaje = document.getElementById('txtMensaje')
 
 
 
-const mensaje = () => {
-    let inputNombres = inputNombre.value
-    let inputCorreos = inputCorreo.value
-    let inputMensajes = inputMensaje.value
+const registrarMensaje = () => {
+    let data = {
+        nombre: inputNombre.value,
+        correo: inputCorreo.value,
+        mensaje: inputMensaje.value
 
-    console.log("Nombre del cliente: ", inputNombres)
-    console.log("Correo del Cliente: ", inputCorreos)
-    console.log("Mensaje del cliente: ", inputMensajes)
+    }
+    registrarDatos("registrar-mensaje", data)
 
-}
-
-
-
-
+};
 
 const validar = () => {
     let hayError = false;
@@ -45,7 +41,6 @@ const validar = () => {
 
 
     if (hayError == true) {
-        mensaje()
         Swal.fire({
 
             'icon': 'warning',
@@ -54,13 +49,13 @@ const validar = () => {
         });
         console.log("Rellene los campos vacios")
     } else {
-        mensaje()
         Swal.fire({
             'icon': 'success',
             'title': 'Enviado Exitosamente',
             'text': 'Por favor esperar respuesta por medio del correo'
-        });
+        })
+        registrarMensaje();
     }
-}
+};
 
 botonEnviar.addEventListener("click", validar)
