@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar puntos de retiro</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/agregarPuntosDeRetiro.css">
+
+
+</head>
+
+<body>
+
+    <section id="sctInicioSesion">
+        <i class="fa-solid fa-lock-keyhole"></i>
+        <section id="sct2">
+            <h1>Puntos de retiro</h1>
+            <form>
+
+
+
+
+
+                <div class="contControl">
+                    <label for="txtNombre">Nombre</label>
+                </div>
+                <div class="contControl">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Nombre" id="txt-nombre">
+
+                </div>
+
+                <div class="contControl">
+                    <label for="txtProvincia">Provincia</label>
+                </div>
+                <div class="contControl">
+                    <select id="slt-provincias">
+                        <option value="">--Provincia--</option>
+                        <option value="1">Limón</option>
+                        <option value="2">Puntarenas</option>
+                        <option value="3">Guanacaste</option>
+                        <option value="4">Heredia</option>
+                        <option value="5">Cartago</option>
+                        <option value="6">Alajuela</option>
+                        <option value="7">San José</option>
+                        </select>
+                </div>
+                <div class="contControl">
+                    <label for="txtCorreo">Dirección exacta</label>
+                </div>
+                <div class="contControl">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Dirección" id="txt-direccionExacta">
+
+                </div>
+                <div class="contControl">
+                    <label for="txtCorreo">Correo</label>
+                </div>
+                <div class="contControl">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Correo electrónico" id="txt-correo">
+
+                </div>
+                <div class="contControl">
+                    <label for="txtTelefono">Teléfono</label>
+                </div>
+                <div class="contControl">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Número de telefono" id="txt-telefono">
+
+                </div>
+
+                <div class="botonBorde">
+                    <button type="button" id="btnAgregar" class="btnInicioSesion">Agregar</button>
+                </div>
+            </form>
+        </section>
+
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicioGeneral.js"></script>
+    <script src="js/agregarPuntosDeRetiro.js"></script>
+</body>
+
+</html>
