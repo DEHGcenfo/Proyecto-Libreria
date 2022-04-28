@@ -9,6 +9,7 @@ router.post('/registrar-autor', (req, res) => {
     let nuevoAutor = new Autor({
 
         nombre: req.body.nombre,
+        fotoAutor: req.body.fotoAutor,
         premios: req.body.premios,
         resena: req.body.resena,
         detalles: req.body.detalles,

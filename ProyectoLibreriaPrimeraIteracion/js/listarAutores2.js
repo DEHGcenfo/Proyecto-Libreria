@@ -16,6 +16,9 @@ const mostrarDatos = () => {
             tituloAutor.classList.add('nombreAutor')
             tituloAutor.textContent = llamarObjetos.nombre
 
+            let foto = document.createElement('img')
+            foto.classList.add('fotoAutor')
+            foto.src = llamarObjetos.fotoAutor
 
             let premiosGanados = document.createElement('h2')
             premiosGanados.textContent = llamarObjetos.premios
@@ -27,6 +30,7 @@ const mostrarDatos = () => {
             detallesAutor.textContent = llamarObjetos.detalles
 
             carta.appendChild(tituloAutor)
+            carta.appendChild(foto)
             carta.appendChild(premiosGanados)
             carta.appendChild(resennaAutor)
             carta.appendChild(detallesAutor)
