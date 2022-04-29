@@ -256,3 +256,9 @@ td {
     right: 1100px;
     top: -120px;
 }
+
+.carta {
+    border: 2px solid black;
+    width: 25%;
+    height: 200px;
+}
