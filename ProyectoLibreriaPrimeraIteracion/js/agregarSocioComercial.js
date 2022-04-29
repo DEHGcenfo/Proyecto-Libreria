@@ -1,5 +1,4 @@
 const nombreSocio = document.getElementById('nombreSocio')
-const logoSocio = document.getElementById('insertImage')
 const ubicacionSocio = document.getElementById('ubicacionSocio')
 const telefonoSocio = document.getElementById('numeroSocio')
 const botonGuardar = document.getElementById('tenth-btn')
@@ -7,7 +6,6 @@ const botonGuardar = document.getElementById('tenth-btn')
 const registrarSocioComercial = () => {
     let data = {
         nombreSocio: nombreSocio.value,
-        logoSocio: logoSocio.value,
         ubicacionSocio: ubicacionSocio.value,
         telefonoSocio: telefonoSocio.value
     }

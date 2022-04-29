@@ -11,7 +11,7 @@ router.post('/registrar-sociosComerciales', (req, res) => {
 
         nombreSocio: req.body.nombreSocio,
         ubicacionSocio: req.body.ubicacionSocio,
-        telefonoSocio: req.body.telefonoSocio,
+        telefonoSocio: req.body.telefonoSocio
 
 
     })
