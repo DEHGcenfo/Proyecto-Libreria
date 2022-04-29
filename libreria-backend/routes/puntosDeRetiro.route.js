@@ -1,12 +1,12 @@
 const express = require('express')
-const PuntoDeRetiro = require('../models/puntosDeRetiro.model')
+const puntoDeRetiro = require('../models/puntosDeRetiro.model')
     // router permite redireccionar la direcciones que vienen desde el front-end
 const router = express.Router()
 
 //Construccion del end-point para registro de usuarios
 
 router.post('/registrar-puntosDeRetiro', (req, res) => {
-    let nuevoPuntoDeRetiro = new PuntoDeRetiro({
+    let nuevoPuntoDeRetiro = new puntoDeRetiro({
 
         nombre: req.body.nombre,
         provincia: req.body.provincia,
