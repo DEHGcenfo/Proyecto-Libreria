@@ -1,12 +1,12 @@
 const nombreGenero = document.getElementById('nombreGenero')
-const descripcionGenero = document.getElementById('descripcionGenero')
+const IdGenero = document.getElementById('IdGenero')
 const guardarCambios = document.getElementById('tenth-btn')
 
 
 const agregarGeneroLiterario = () => {
     let data = {
         nombreGenero: nombreGenero.value,
-        descripcionGenero: descripcionGenero.value,
+        IdGenero: IdGenero.value,
     }
     registrarDatos("registrar-genero", data)
 }
@@ -22,11 +22,11 @@ const validar = () => {
         nombreGenero.classList.remove("inputError");
     }
 
-    if (descripcionGenero.value == "") {
+    if (IdGenero.value == "") {
         hayError = true;
-        descripcionGenero.classList.add("inputError");
+        IdGenero.classList.add("inputError");
     } else {
-        descripcionGenero.classList.remove("inputError");
+        IdGenero.classList.remove("inputError");
     }
 
 

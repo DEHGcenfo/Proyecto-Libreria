@@ -45,27 +45,27 @@
 
             </div>
             <div id="contenido">
-            <h1 id="titulo">Agregar genero literario</h1>
-            <form>
-                <label for="nombreGenero">Nombre del genero literario</label>
-                <div><input type="text" id="nombreGenero"></div>
-                <section id="sectionPerfil">
-                    <div>
-                        <label for="insertImage">Sube la foto del genero literario</label>
-                        <div><input type="file" id="insertImage"></div>
-                    </div>
+                <h1 id="titulo">Agregar genero literario</h1>
+                <form>
+                    <label for="nombreGenero">Nombre del genero literario</label>
+                    <div><input type="text" id="nombreGenero"></div>
+                    <section id="sectionPerfil">
+                        <div>
+                            <label for="insertImage">Sube la foto del genero literario</label>
+                            <div><input type="file" id="insertImage"></div>
+                        </div>
 
-                    <div>
-                        <label for="descripcionGenero">Descripcion del genero literario</label>
-                        <div><input type="text" id="premiosAutor"></div>
-                    </div>
+                        <div>
+                            <label for="descripcionGenero">ID# del genero literario</label>
+                            <div><input type="text" id="IdGenero" placeholder="#00000x"></div>
+                        </div>
 
 
 
-                    <div><button id="tenth-btn" type="button">Guardar cambios</button></div>
+                        <div><button id="tenth-btn" type="button">Guardar cambios</button></div>
 
-                </div>
-                </section>
+            </div>
+            </section>
             </form>
         </section>
         <footer id="pie-de-pagina">
@@ -81,7 +81,9 @@
             </ul>
         </footer>
 
-        <script src="https//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/servicioGeneral.js"></script>
         <script src="js/agregarGeneroLiterario.js"></script>
 
 </body>
