@@ -230,3 +230,14 @@ h1 {
     right: 120px;
     top: 80px;
 }
+
+#tenth-btn {
+    background: #c93117;
+    border-radius: 30px;
+    z-index: 0;
+    overflow: hidden;
+    height: 45px;
+    width: 80px;
+    position: relative;
+    color: #fff;
+}
