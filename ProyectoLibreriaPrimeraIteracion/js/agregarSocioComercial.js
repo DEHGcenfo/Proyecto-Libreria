@@ -10,7 +10,7 @@ const registrarSocioComercial = () => {
         telefonoSocio: telefonoSocio.value
     }
     registrarDatos("registrar-sociosComerciales", data)
-}
+};
 
 const validar = () => {
 
@@ -49,14 +49,10 @@ const validar = () => {
         console.log("Rellene los espacios vacios");
 
     } else {
-        Swal.fire({
-            "icon": "success",
-            "title": "Información guardada!",
-            "text": "Tarjeta registrada"
-        })
+
         registrarSocioComercial();
 
     }
-}
+};
 
 botonGuardar.addEventListener('click', validar)

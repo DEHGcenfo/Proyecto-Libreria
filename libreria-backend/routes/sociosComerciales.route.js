@@ -29,7 +29,7 @@ router.post('/registrar-sociosComerciales', (req, res) => {
     })
 })
 router.get('/listar-sociosComerciales', (req, res) => {
-    socioComercial.find((error, lista) => {
+    SocioComercial.find((error, lista) => {
         if (error) {
             res.json({
                 msj: 'No se pudo listar el socio comercial',
