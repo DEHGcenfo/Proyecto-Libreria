@@ -64,9 +64,5 @@ app.use('/api', require('./routes/usuarios.route'));
 app.use('/api', require('./routes/metodoDePago.route'));
 app.use('/api', require('./routes/sociosComerciales.route'));
 app.use('/api', require('./routes/puntosDeRetiro.route'));
-<<<<<<< HEAD
-app.use('/api', require('./routes/contacto.route'));
-=======
 app.use('/api', require('./routes/contacto.route'));
 app.use('/api', require('./routes/agregarGeneros.route'));
->>>>>>> 2a53232d7120e121841273548fa86f1328dd7f72
