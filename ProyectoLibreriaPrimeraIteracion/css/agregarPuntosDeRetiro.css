@@ -57,7 +57,10 @@ body {
     
 }
 
+select {}
+
 #sctPuntosDeRetiro form select {
+    background-color: #fefbe2;
     height: 50px;
     width: 300px;
 }
