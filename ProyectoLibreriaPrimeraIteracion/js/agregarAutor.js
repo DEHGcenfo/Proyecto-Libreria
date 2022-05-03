@@ -1,6 +1,6 @@
 const nombreAutor = document.getElementById("tituloAutor");
 const fotoAutor = document.getElementById('insertImage')
-const foto = document.getElementById('fotoAutor')
+const foto = document.getElementById('fotoAgregar')
 const guardarCambios = document.getElementById("tenth-btn");
 const premiosGanados = document.getElementById("premiosAutor");
 const resenaAutor = document.getElementById("resenaAutor");
@@ -11,10 +11,11 @@ const registrarAutor = () => {
     let data = {
 
         nombre: nombreAutor.value,
+        fotoAutor: foto.src,
         premios: premiosGanados.value,
         resena: resenaAutor.value,
         detalles: detallesAutor.value,
-        fotoAutor: foto.src
+
     }
     registrarDatos("registrar-autor", data)
 };

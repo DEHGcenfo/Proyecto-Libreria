@@ -1,7 +1,7 @@
 'use strict'
 
 const botonFoto = document.querySelector('#insertImage')
-const imagen = document.querySelector('#fotoAutor')
+const imagen = document.querySelector('#fotoAgregar')
 
 let widget_cloudinary = cloudinary.createUploadWidget({
     cloudName: 'dviz0qebs',

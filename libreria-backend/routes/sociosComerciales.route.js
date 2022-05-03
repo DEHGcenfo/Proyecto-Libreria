@@ -8,7 +8,7 @@ const router = express.Router()
 router.post('/registrar-sociosComerciales', (req, res) => {
     let nuevoSocioComercial = new SocioComercial({
 
-
+        fotoSocio: req.body.fotoSocio,
         nombreSocio: req.body.nombreSocio,
         ubicacionSocio: req.body.ubicacionSocio,
         telefonoSocio: req.body.telefonoSocio

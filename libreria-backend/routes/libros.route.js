@@ -7,7 +7,7 @@ const router = express.Router()
 
 router.post('/registrar-libro', (req, res) => {
     let nuevoLibro = new Libro({
-
+        foto: req.body.foto,
         titulo: req.body.titulo,
         resenna: req.body.resenna,
         isbn: req.body.isbn,

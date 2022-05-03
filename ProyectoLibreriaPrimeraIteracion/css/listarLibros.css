@@ -286,3 +286,8 @@ td {
     justify-content: center;
     align-items: center;
 }
+
+.btnComprar {
+    width: 120px;
+    height: 90px;
+}
