@@ -367,6 +367,10 @@ ul li {
 #sctPuntosDeRetiro form input {
     height: 50px;
     width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #fefbe2;
 }
 
 #sctPuntosDeRetiro form select {

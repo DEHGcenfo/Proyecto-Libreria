@@ -61,9 +61,17 @@ body {
 #sctPuntosDeRetiro form input {
     height: 50px;
     width: 300px;
+    background-color: #fefbe2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
 }
 
+select {}
+
 #sctPuntosDeRetiro form select {
+    background-color: #fefbe2;
     height: 50px;
     width: 300px;
 }
