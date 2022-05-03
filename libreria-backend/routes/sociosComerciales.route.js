@@ -8,7 +8,7 @@ const router = express.Router()
 router.post('/registrar-sociosComerciales', (req, res) => {
     let nuevoSocioComercial = new SocioComercial({
 
-
+        fotoSocio: req.body.fotoSocio,
         nombreSocio: req.body.nombreSocio,
         ubicacionSocio: req.body.ubicacionSocio,
         telefonoSocio: req.body.telefonoSocio
@@ -29,7 +29,7 @@ router.post('/registrar-sociosComerciales', (req, res) => {
     })
 })
 router.get('/listar-sociosComerciales', (req, res) => {
-    socioComercial.find((error, lista) => {
+    SocioComercial.find((error, lista) => {
         if (error) {
             res.json({
                 msj: 'No se pudo listar el socio comercial',

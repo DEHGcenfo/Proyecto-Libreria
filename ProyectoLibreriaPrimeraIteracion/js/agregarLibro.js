@@ -1,3 +1,4 @@
+const fotoLibro = document.getElementById('fotoAgregar')
 const tituloLibro = document.getElementById('tituloDelLibro')
 const autor = document.getElementById('nombreAutor')
 const isbn = document.getElementById('codigoISBN')
@@ -14,6 +15,7 @@ const btnAgregarLibro = document.getElementById('agregarLibro')
 
 const registrarLibro = () => {
     let data = {
+        foto: fotoLibro.src,
         titulo: tituloLibro.value,
         resenna: resenna.value,
         isbn: isbn.value,

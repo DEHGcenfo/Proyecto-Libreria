@@ -1,4 +1,5 @@
 const nombreSocio = document.getElementById('nombreSocio')
+const fotoSocio = document.getElementById('fotoAgregar')
 const ubicacionSocio = document.getElementById('ubicacionSocio')
 const telefonoSocio = document.getElementById('numeroSocio')
 const botonGuardar = document.getElementById('tenth-btn')

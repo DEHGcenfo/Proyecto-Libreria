@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reporteSociosComerciales.css">
-    <link rel="stylesheet" href="css/headerFooterSociosComerciales">
+    <link rel="stylesheet" href="css/headerFooter.css">
 
 
     <title>Reporte de socios comerciales</title>
@@ -43,38 +43,11 @@
 
     </div>
     <h1>Reporte de socios comerciales con mas retiros</h1>
+    <label for="busacarAutor">Filtrar</label>
+    <input type="text" id="busacarSocio">
+    <section id="sct-contenedor-cartas">
 
-    <table class="center">
-        <thead>
-            <tr>
-                <th> Foto socio </th>
-                <th>Nombre de socio</th>
-                <th>Fecha de Registro</th>
-                <th>Cantidad de Retiros</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-
-                <td><div class="images"><img src="https://askzipy.com/files/logo/9712.png" class="imgs"></div></td>
-                <td>Libreria Antigua </td>
-                <td>12/23/2021</td>
-                <td>$5200.00</td>
-            </tr>
-            <tr>
-                <td><div class="images"><img src="https://cloudfront-us-east-1.images.arcpublishing.com/gruponacion/KDMTCD3A4VAVNIECLT437OD5FA.JPG" class="imgs"></div></td>
-                <td>Wallmart Alajuela </td>
-                <td>12/23/2021</td>
-                <td>$9200.00</td>
-            </tr>
-            <tr>
-                <td><div class="images"> <img src="https://cloudfront-us-east-1.images.arcpublishing.com/gruponacion/WPOKON4MOFCMVESGYEWKN2DDOM.JPG" class="imgs"></div></td>
-                <td>Liberia Lehmann </td>
-                <td>12/23/2021</td>
-                <td>$5100.00</td>
-            </tr>
-        </tbody>
-    </table>
+    </section>
 
     <footer id="pie-de-pagina">
         <ul id="listaFooter">
@@ -87,8 +60,11 @@
         </ul>
     </footer>
 
-
-    <script src="js/reporteSociosComerciales.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicioGeneral.js"></script>
+    <script src="js/servicioImagenes.js"></script>
+    <script src="js/listarSocios.js"></script>
 </body>
 
 </html>

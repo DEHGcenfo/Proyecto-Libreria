@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const schemaRegistroLibros = new mongoose.Schema({
 
-
+    foto: { type: String, required: false },
     titulo: { type: String, required: true },
     resenna: { type: String, required: true },
     isbn: { type: Number, required: true, unique: true },
