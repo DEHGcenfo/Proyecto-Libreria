@@ -66,8 +66,5 @@ app.use('/api', require('./routes/sociosComerciales.route'));
 app.use('/api', require('./routes/puntosDeRetiro.route'));
 app.use('/api', require('./routes/contacto.route'));
 app.use('/api', require('./routes/agregarGeneros.route'));
-<<<<<<< HEAD
 app.use('/api', require('./routes/agregarAlCarrito.route'));
-=======
 app.use('/api', require('./routes/editarParametros.route'));
->>>>>>> 1e0aa3a38aa699ead7d06baddc4e3e83bea4b1eb

@@ -5,7 +5,7 @@ const schemaRegistroUsuario = new mongoose.Schema({
 
     tipoUsuario: { type: Number, required: true },
     nombre: { type: String, required: true },
-    correo: { type: String, required: true, unique: true },
+    correo: { type: String, required: true },
     genero: { type: Number, required: true },
     tipoId: { type: Number, required: true },
     identificacion: { type: String, required: true, unique: true },

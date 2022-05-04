@@ -9,7 +9,8 @@ const schemaRegistroMetodosDePago = new mongoose.Schema({
     fechaExpiracion: { type: String, required: true, },
     nombreUsuario: { type: String, required: true, },
     direccionUsuario: { type: String, required: true },
-    codigoCVV: { type: String, required: true, unique: true },
+    codigoCVV: { type: String, required: true },
+    correo: { type: String, required: true }
 
 });
 module.exports = new mongoose.model('metodoDePago', schemaRegistroMetodosDePago, 'metodosDePago');

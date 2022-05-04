@@ -10,11 +10,13 @@ const botonAgregar = document.getElementById('botonAgregar')
 const registrarMetodoDePago = () => {
     let data = {
         nombreTarjeta: nombreTarjeta.value,
+        correo: JSON.parse(localStorage.getItem('usuarioConectado')).correo,
         numeroTarjeta: numeroTarjeta.value,
         fechaExpiracion: fechaExpiracion.value,
         nombreUsuario: nombreUsuario.value,
         direccionUsuario: direccionUsuario.value,
-        codigoCVV: nombreUsuario.value,
+        codigoCVV: codigoCVV.value,
+
     }
     registrarDatos("registrar-metodoDePago", data)
 }

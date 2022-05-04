@@ -42,3 +42,24 @@ const obtenerDatos = async(endpoint) => {
 
     return listaDatos
 }
+
+const obtenerDatosConParametro = async(endpoint, dataParametro) => {
+    let url = `http://localhost:3000/api/${endpoint}`;
+    let listaDatos = [];
+    await axios({
+            'url': url,
+            'method': 'get',
+            'params': { correo: dataParametro.correo },
+            'responseType': 'json'
+        })
+        .then(response => {
+            listaDatos = response.data.lista;
+        }).catch(error => {
+            Swal.fire({
+                icon: 'error',
+                text: error
+            });
+        });
+
+    return listaDatos;
+};

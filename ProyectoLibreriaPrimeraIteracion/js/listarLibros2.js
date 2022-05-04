@@ -76,7 +76,7 @@ const mostrarDatos = () => {
             let btnComprar = document.createElement('button')
             btnComprar.classList.add('btnComprar')
             btnComprar.innerHTML = 'Agregar al carrito'
-            btnComprar.addEventListener('click', agregaCompra)
+                //btnComprar.addEventListener('click', agregaCompra)
 
 
 
