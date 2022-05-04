@@ -275,14 +275,6 @@ ul li {
     margin-bottom: 50px;
 }
 
-#subContDerechaBotones {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 80px;
-    margin-bottom: 50px;
-}
-
 #contAgregarSocioComercial {
     margin-left: 500px;
 }
@@ -340,7 +332,8 @@ ul li {
 
 #sct1 {
     position: relative;
-    right: 120px;
+    right: 80px;
+    bottom: 12px;
     display: flex;
     justify-content: center;
     display: flex;
@@ -350,8 +343,9 @@ ul li {
     align-items: center;
 }
 
-#sct1 form input {
-    margin-top: 10px;
+.contControlInputFecha {
+    position: relative;
+    top: 7%;
 }
 
 .contControl {
@@ -517,6 +511,14 @@ p#textoBotonFoto {
 }
 
 .tarjeta {
-    width: 400px;
+    transform: rotate(345deg);
+    position: relative;
+    width: 500px;
     height: 400px;
+}
+
+.contTarjeta {
+    width: 600px;
+    padding-left: 20px;
+    border-left: 2px solid #000;
 }

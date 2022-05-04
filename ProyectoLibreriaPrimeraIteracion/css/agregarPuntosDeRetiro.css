@@ -6,15 +6,13 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif;
 }
 
-#main{
+#main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-   
 }
-
 
 #sctPuntosDeRetiro {
     display: flex;
@@ -24,18 +22,12 @@ body {
     margin: auto;
 }
 
-
-
-
 #sctPuntosDeRetiro form {
     align-items: center;
     display: flex;
     flex-direction: column;
     align-self: center;
-  
 }
-
-
 
 #sctPuntosDeRetiro form label {
     width: 230px;
@@ -51,13 +43,9 @@ body {
     height: 50px;
     width: 300px;
     background-color: #fefbe2;
-<<<<<<< HEAD
-=======
     border-left: none;
     border-right: none;
     border-top: none;
-    
->>>>>>> 85ee20a5aae3d13d155800b1921bec8146440e1e
 }
 
 #sctPuntosDeRetiro form select {
