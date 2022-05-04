@@ -6,15 +6,19 @@ const direccionUsuario = document.getElementById('direccion')
 const codigoCVV = document.getElementById('codigoCVV')
 const botonAgregar = document.getElementById('tenth-btn')
 
+let correoUsuario = JSON.parse(localStorage.getItem('usuarioConectado')).correo
 
 const registrarMetodoDePago = () => {
+    console.log(correoUsuario)
     let data = {
         nombreTarjeta: nombreTarjeta.value,
+        correo: correoUsuario,
         numeroTarjeta: numeroTarjeta.value,
         fechaExpiracion: fechaExpiracion.value,
         nombreUsuario: nombreUsuario.value,
         direccionUsuario: direccionUsuario.value,
-        codigoCVV: nombreUsuario.value,
+        codigoCVV: codigoCVV.value,
+
     }
     registrarDatos("registrar-metodoDePago", data)
 }
