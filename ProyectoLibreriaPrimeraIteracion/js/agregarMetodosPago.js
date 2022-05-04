@@ -4,7 +4,7 @@ const fechaExpiracion = document.getElementById('fechaExpiracion')
 const nombreUsuario = document.getElementById('nombreUsuario')
 const direccionUsuario = document.getElementById('direccion')
 const codigoCVV = document.getElementById('codigoCVV')
-const botonAgregar = document.getElementById('botonAgregar')
+const botonAgregar = document.getElementById('tenth-btn')
 
 
 const registrarMetodoDePago = () => {
