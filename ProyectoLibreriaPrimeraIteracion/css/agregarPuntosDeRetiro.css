@@ -51,13 +51,14 @@ body {
     height: 50px;
     width: 300px;
     background-color: #fefbe2;
+<<<<<<< HEAD
+=======
     border-left: none;
     border-right: none;
     border-top: none;
     
+>>>>>>> 85ee20a5aae3d13d155800b1921bec8146440e1e
 }
-
-select {}
 
 #sctPuntosDeRetiro form select {
     background-color: #fefbe2;

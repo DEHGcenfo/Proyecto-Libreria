@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/comprobarCompras.css">
+    <link rel="stylesheet" href="css/agregarMetodoPago.css">
 
     <title>Document</title>
 </head>
@@ -23,9 +24,6 @@
                          <i class="fa fa-search"></i>
                       </button>
                 </div>
-
-
-
                 <ul>
                     <li><a class="linkHeader" href="listarLibros.html">Libros</a></li>
                     <li><a class="linkHeader" href="perfiNormal1.html">Perfil</a></li>
@@ -46,64 +44,100 @@
             <div><a href="carritoDeCompras.html"><button class="breadCrums">Carrito</button></a></div>
 
         </div>
-        <div id="contComprobarCompra">
+        <section id="sctPuntosDeRetiro">
+            <i class="fa-solid fa-lock-keyhole"></i>
+            <h1>Agregar método de pago</h1>
+            <section id="sctGeneral">
 
-            <div id="contIzquierda">
-                <div class="subContIzquierda">
-                    <h3>Agregar método de pago</h3>
-                </div>
-                <div class="subContIzquierda">
-                    <label for="">Nombre de la tarjeta:</label>
+                <section id="sct2">
 
-                    <input type="text" id="nombreTarjeta">
-                </div>
 
-                <div class="subContIzquierda">
-                    <label for="">Número de la tarjeta : </label>
+                    <form>
 
-                    <input type="text" id="numeroTarjeta">
-                </div>
 
-                <div class="subContIzquierda">
-                    <label for="">Fecha de expiración:</label>
+                        <div class="contControl">
+                            <label for="txtNombre">Nombre del Usuario</label>
+                        </div>
+                        <div class="contControl">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Nombre" id="nombreSocio">
 
-                    <input type="date" id="fechaExpiracion">
+                        </div>
 
-                </div>
+
+
+                        <div class="contControl">
+                            <label for="txtUbicacion">Dirección/Residencia</label>
+                        </div>
+                        <div class="contControl">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Dirección" id="direccion">
+
+                        </div>
+                        <div class="contControl">
+                            <label for="txtCorreo">Código de seguridad de la tarjeta(CVV)</label>
+                        </div>
+                        <div class="contControl">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Numero de telefono" id="codigoCVV">
+
+                        </div>
+
+                    </form>
+                </section>
+
+
+                <section id="sct1">
+                    <form>
+
+
+                        <div class="contControl">
+                            <label for="txtNombre">Nombre de la tarjeta</label>
+                        </div>
+                        <div class="contControl">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Nombre de la tarjeta" id="nombreTarjeta">
+
+                        </div>
+
+
+
+                        <div class="contControl">
+                            <label for="txtUbicacion">Número de la tarjeta</label>
+                        </div>
+                        <div class="contControl">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Numero de la tarjeta" id="numeroTarjeta">
+
+                        </div>
+                        <div class="contControl">
+                            <label for="txtCorreo">Fecha de expiración</label>
+                        </div>
+                        <div class="contControl">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="date" placeholder="Fecha de expiracion" id="fechaExpiracion">
+
+                        </div>
+
+
+                    </form>
+
+
+
+
+                </section>
+                <section id="sct3">
+
+                    <img class="tarjeta" src="img/tarjetaProyecto.jpg" alt="">
+
+
+
+                </section>
+            </section>
+            <div class="botonBorde">
+                <button type="button" id="tenth-btn" class="btnAgregar">Agregar</button>
             </div>
-
-
-
-            <div id="contDerecha">
-
-                <div class="subContDerecha">
-                    <label for="">Nombre del Usuario:</label>
-
-                    <input type="text" id="nombreUsuario">
-
-                </div>
-
-                <div class="subContDerecha">
-                    <label for="">Dirección/Residencia:</label>
-
-                    <input type="text" id="direccion">
-
-                </div>
-
-                <div class="subContDerecha">
-                    <label for="">Código de seguridad de la tarjeta(CVV)</label>
-                    <input type="text" placeholder="CVV" id="codigoCVV">
-                </div>
-                <div class="subContDerecha">
-
-                </div>
-                <div id="subContDerechaBotones">
-                    <button type="button" id="botonAgregar">Agregar</button>
-
-                </div>
-
-            </div>
-        </div>
+        </section>
 
         <footer id="pie-de-pagina">
             <ul id="listaFooter">
