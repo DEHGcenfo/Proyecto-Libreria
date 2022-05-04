@@ -36,28 +36,12 @@ const mostrarDatos = () => {
             foto.classList.add('fotoLibro')
             foto.src = llamarObjetos.foto
 
-            let resenna = document.createElement('p')
-            resenna.textContent = llamarObjetos.resenna
+
 
             let isbn = document.createElement('p')
             isbn.classList.add('isbn')
             isbn.textContent = llamarObjetos.isbn
 
-            let fechaPublicacion = document.createElement('p')
-            fechaPublicacion.textContent = llamarObjetos.fechaPublicacion
-
-            let editorial = document.createElement('p')
-            editorial.textContent = llamarObjetos.editorial
-
-            let premios = document.createElement('p')
-            premios.textContent = llamarObjetos.premios
-
-            let idioma = document.createElement('p')
-            idioma.classList.add('idioma')
-            idioma.textContent = llamarObjetos.idioma
-
-            let generosLiterarios = document.createElement('p')
-            generosLiterarios.textContent = llamarObjetos.generosLiterarios
 
             let formato = document.createElement('p')
             formato.classList.add('formato')
@@ -83,13 +67,7 @@ const mostrarDatos = () => {
 
             carta.appendChild(titulo)
             carta.appendChild(foto)
-            carta.appendChild(resenna)
             carta.appendChild(isbn)
-            carta.appendChild(fechaPublicacion)
-            carta.appendChild(editorial)
-            carta.appendChild(premios)
-            carta.appendChild(idioma)
-            carta.appendChild(generosLiterarios)
             carta.appendChild(formato)
             carta.appendChild(autor)
             carta.appendChild(precio)
