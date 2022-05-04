@@ -43,13 +43,13 @@ const obtenerDatos = async(endpoint) => {
     return listaDatos
 }
 
-const obtenerDatosConParametro = async(endpoint, dataParametro) => {
+const obtenerDatosConParametro = async(endpoint, data) => {
     let url = `http://localhost:3000/api/${endpoint}`;
     let listaDatos = [];
     await axios({
             'url': url,
             'method': 'get',
-            'params': { correo: dataParametro.correo },
+            'params': { 'correo': data.correo },
             'responseType': 'json'
         })
         .then(response => {

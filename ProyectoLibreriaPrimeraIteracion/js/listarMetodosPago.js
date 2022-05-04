@@ -7,7 +7,7 @@ const inicializar = async() => {
 
     };
 
-    listaMetodos = await obtenerDatosConParametro('listar-metodos-por-correo', data);
+    listaMetodos = await obtenerDatosConParametro('listar-metodoDePago-por-correo', data);
     mostrarDatos();
 };
 

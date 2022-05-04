@@ -47,7 +47,7 @@ router.get('/listar-metodoDePago', (req, res) => {
     })
 })
 
-router.get('/listar-metodos-por-correo', (req, res) => {
+router.get('/listar-metodoDePago-por-correo', (req, res) => {
     let correoUsuario = req.query.correo;
     metodoDePago.find({ correo: correoUsuario }, (error, lista) => {
         if (error) {
