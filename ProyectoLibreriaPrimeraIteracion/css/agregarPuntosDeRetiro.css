@@ -6,47 +6,36 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif;
 }
 
-#sctPuntosDeRetiro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    width: 1855px;
-    height: 960px;
-}
-
-#sct2 {
+#main{
     display: flex;
     flex-direction: column;
-    padding: 250px;
-    background-color: #fefbe2;
-    padding-right: 400px;
-    height: 917px;
-    width: 1000px;
+    justify-content: center;
     align-items: center;
+    margin: auto;
+   
 }
 
-.contControl {
+
+#sctPuntosDeRetiro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: auto;
 }
+
+
+
 
 #sctPuntosDeRetiro form {
-    padding: 3%;
     align-items: center;
     display: flex;
     flex-direction: column;
     align-self: center;
-    position: relative;
-    left: 50px;
-    bottom: 70px;
+  
 }
 
-#sctPuntosDeRetiro form .cont-control {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 #sctPuntosDeRetiro form label {
     width: 230px;
@@ -61,9 +50,17 @@ body {
 #sctPuntosDeRetiro form input {
     height: 50px;
     width: 300px;
+    background-color: #fefbe2;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
 }
 
+select {}
+
 #sctPuntosDeRetiro form select {
+    background-color: #fefbe2;
     height: 50px;
     width: 300px;
 }
@@ -76,15 +73,12 @@ body {
 }
 
 #sctPuntosDeRetiro h1 {
-    padding-bottom: 20px;
     border-bottom: 1px solid black;
     font-weight: bold;
     font-size: 30px;
-    position: relative;
-    bottom: 60px;
-    left: 50px;
-    margin-bottom: 50px;
     color: #b34a12;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 #imgUsuario {
