@@ -28,6 +28,16 @@ const mostrarDatos = () => {
             let carta = document.createElement('div')
             carta.classList.add('carta')
 
+            let contInfo = document.createElement('section')
+            contInfo.classList.add('contInfo')
+
+
+            let divIzquierdo = document.createElement('div')
+            divIzquierdo.classList.add('divIzquierdo')
+
+            let divDerecho = document.createElement('div')
+            divDerecho.classList.add('divDerecho')
+
             let titulo = document.createElement('h2')
             titulo.classList.add('titulo')
             titulo.textContent = llamarObjetos.titulo
@@ -67,11 +77,14 @@ const mostrarDatos = () => {
 
             carta.appendChild(titulo)
             carta.appendChild(foto)
-            carta.appendChild(isbn)
-            carta.appendChild(formato)
-            carta.appendChild(autor)
-            carta.appendChild(precio)
-            carta.appendChild(btnComprar)
+            carta.appendChild(contInfo)
+            divIzquierdo.appendChild(autor)
+            divIzquierdo.appendChild(isbn)
+            divIzquierdo.appendChild(formato)
+            divDerecho.appendChild(precio)
+            divDerecho.appendChild(btnComprar)
+            contInfo.appendChild(divIzquierdo)
+            contInfo.appendChild(divDerecho)
             seccionCartas.appendChild(carta)
 
 
