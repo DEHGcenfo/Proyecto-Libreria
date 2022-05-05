@@ -13,7 +13,7 @@ const schemaRegistroLibros = new mongoose.Schema({
     generosLiterarios: { type: String, required: true },
     formato: { type: String, required: true },
     autor: { type: String, required: true },
-    precio: { type: String, required: true },
+    precio: { type: Number, required: true },
 
 });
 module.exports = new mongoose.model('Libro', schemaRegistroLibros, 'libros');
