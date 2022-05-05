@@ -6,10 +6,11 @@ const router = express.Router()
 //Construccion del end-point para registro de usuarios
 
 router.post('/registrar-usuario', (req, res) => {
+    console.log('foto ' + req.body.fotoUsuario)
     let nuevoUsuario = new Usuario({
 
         tipoUsuario: req.body.tipoUsuario,
-        foto: req.body.foto,
+        fotoUsuario: req.body.fotoUsuario,
         nombre: req.body.nombre,
         correo: req.body.correo,
         genero: req.body.genero,

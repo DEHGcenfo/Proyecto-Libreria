@@ -19,7 +19,7 @@ const registrarUsuario = () => {
 
     let data = {
         tipoUsuario: listaUsuarios.value,
-        foto: fotoUsuario.scr,
+        fotoUsuario: fotoUsuario.src,
         nombre: inputNombre.value,
         correo: inputCorreo.value,
         genero: listaGeneros.value,
