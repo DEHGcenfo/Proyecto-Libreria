@@ -38,6 +38,7 @@ const mostrarDatos = () => {
 
 
             let titulo = document.createElement('a')
+            titulo.setAttribute('href', 'perfilLibro.html?isbn=' + llamarObjetos.isbn)
             titulo.classList.add('titulo')
             titulo.textContent = llamarObjetos.titulo
 
