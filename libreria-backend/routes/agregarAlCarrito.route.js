@@ -5,9 +5,10 @@ const router = express.Router()
 
 router.post('/registrar-compra', (req, res) => {
     let nuevoAgregar = new Agregar({
-
+        //datos: req.body.datos,
+        correo: req.body.correo,
         titulo: req.body.titulo,
-
+        foto: req.body.src,
         isbn: req.body.isbn,
 
         idioma: req.body.idioma,
@@ -33,15 +34,16 @@ router.post('/registrar-compra', (req, res) => {
 })
 
 router.get('/listar-compra', (req, res) => {
-    Agregar.find((error, lista) => {
+    let correoUsuario = req.query.correo;
+    Agregar.find({ correo: correoUsuario }, (error, lista) => {
         if (error) {
             res.json({
-                msj: 'No se pudo listar los Agregars',
+                msj: 'No se pudo listar los libros',
                 error
             })
         } else {
             res.json({
-                msj: 'Agregars agregados correctamente',
+                msj: 'Libros agregados correctamente',
                 lista
             })
         }

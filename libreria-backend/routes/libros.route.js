@@ -49,4 +49,20 @@ router.get('/listar-libros', (req, res) => {
         }
     })
 })
+
+router.get('/listar-libros-por-correo', (req, res) => {
+    let correoUsuario = req.query.correo;
+    Libro.find({ correo: correoUsuario }, (error, lista) => {
+        if (error) {
+            res.json({
+                msj: 'No se pudo listar los libros en el carrito',
+                error
+            });
+        } else {
+            res.json({
+                lista
+            });
+        }
+    });
+});
 module.exports = router

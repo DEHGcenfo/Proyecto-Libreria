@@ -4,6 +4,7 @@ const schemaRegistroUsuario = new mongoose.Schema({
 
 
     tipoUsuario: { type: Number, required: true },
+    foto: { type: String, required: false },
     nombre: { type: String, required: true },
     correo: { type: String, required: true },
     genero: { type: Number, required: true },
