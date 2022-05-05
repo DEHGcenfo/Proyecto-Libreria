@@ -9,6 +9,7 @@ router.post('/registrar-usuario', (req, res) => {
     let nuevoUsuario = new Usuario({
 
         tipoUsuario: req.body.tipoUsuario,
+        foto: req.body.foto,
         nombre: req.body.nombre,
         correo: req.body.correo,
         genero: req.body.genero,

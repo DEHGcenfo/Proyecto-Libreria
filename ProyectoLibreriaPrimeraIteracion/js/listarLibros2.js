@@ -1,12 +1,5 @@
 const seccionCartas = document.querySelector('#sct-contenedor-cartas')
 const inputFiltro = document.getElementById('txt-filtro')
-    /*const tituloLibro = document.getElementsByClassName('titulo')
-    const isbnLibro = document.getElementsByClassName('isbn')
-    const idiomaLibro = document.getElementsByClassName('idioma')
-    const formatoLibro = document.getElementsByClassName('formato')
-    const autorLibro = document.getElementsByClassName('autor')
-    const precioLibro = document.getElementsByClassName('precio')
-    const btnComprar = document.getElementsByClassName('btnComprar')*/
 
 
 
@@ -19,6 +12,13 @@ const inicializar = async() => {
     mostrarDatos()
 }
 
+
+
+/*const llamarID = () =>{
+    listaLibros.forEach(llamarObjetos =>{
+        
+    })
+}*/
 
 const mostrarDatos = () => {
     seccionCartas.innerHTML = ''
@@ -40,7 +40,7 @@ const mostrarDatos = () => {
 
             let isbn = document.createElement('p')
             isbn.classList.add('isbn')
-            isbn.textContent = llamarObjetos.isbn
+            isbn.textContent = `ISBN: ${llamarObjetos.isbn}`
 
 
             let formato = document.createElement('p')
@@ -60,7 +60,14 @@ const mostrarDatos = () => {
             let btnComprar = document.createElement('button')
             btnComprar.classList.add('btnComprar')
             btnComprar.innerHTML = 'Agregar al carrito'
-                //btnComprar.addEventListener('click', agregaCompra)
+
+
+            for (let i = 0; i < listaLibros.length; i++) {
+
+                btnComprar.addEventListener('click', enviar)
+
+            }
+            //btnComprar.addEventListener('click', agregaCompra)
 
 
 

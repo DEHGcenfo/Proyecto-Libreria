@@ -2,12 +2,13 @@ const mongoose = require('mongoose');
 
 const schemaAgregarAlCarrito = new mongoose.Schema({
 
-
+    //datos: { type: Array, required: true },
+    correo: { type: String, required: true },
     titulo: { type: String, required: true },
-
+    //foto: { type: String, required: true },
     isbn: { type: Number, required: true, unique: true },
 
-    idioma: { type: String, required: true },
+    //idioma: { type: String, required: true },
 
     formato: { type: String, required: true },
     autor: { type: String, required: true },
