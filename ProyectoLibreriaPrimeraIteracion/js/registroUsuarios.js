@@ -1,5 +1,6 @@
 const botonRegistrar = document.getElementById('btn-registrar')
 const listaUsuarios = document.getElementById("slt-tipoUsuarios")
+const fotoUsuario = document.getElementById('fotoAgregar')
 const inputNombre = document.getElementById("txt-nombre")
 const inputCorreo = document.getElementById("txt-correo")
 const listaGeneros = document.getElementById("slt-genero")
@@ -18,6 +19,7 @@ const registrarUsuario = () => {
 
     let data = {
         tipoUsuario: listaUsuarios.value,
+        foto: fotoUsuario.scr,
         nombre: inputNombre.value,
         correo: inputCorreo.value,
         genero: listaGeneros.value,

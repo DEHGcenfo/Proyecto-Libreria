@@ -10,20 +10,55 @@
 </head>
 
 <body>
-    <section id="sct-filtro">
-        <div class="filtro">
-            <label for="txt-filtro">Filtrar</label>
-            <input type="text" id="txt-filtro">
-        </div>
-    </section>
+    <header id="header-inicio">
+        <nav>
+            <img src="img/logoLibreria.png" alt="Logo-libreriaX" id="logo-nav">
 
+            <div class="search">
+                <input type="text" id="txt-filtro" class="searchTerm" placeholder="Buscar libros/autores/generos literarios.">
+                <button type="submit" class="searchButton">
+                    Buscar
+                     <i class="fa fa-search"></i>
+                  </button>
+            </div>
+
+
+
+            <ul>
+                <li><a class="linkHeader" href="listarLibros.html">Libros</a></li>
+                <li><a class="linkHeader" href="registroUsuarios.html">Registrarse</a></li>
+                <li><a class="linkHeader" href="inicioSesion.html">Iniciar Sesión</a></li>
+                <li> <a class="linkHeader" href="contactos.html">Contactenos</a></li>
+
+
+
+            </ul>
+            <input id="carrito" type="image" src="img/carrito de compras.png">
+
+        </nav>
+    </header>
+
+    <h1>Libros</h1>
     <section id="sct-contenedor-cartas">
 
     </section>
+    <footer id="pie-de-pagina">
+        <ul id="listaFooter">
+            <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
+            <li><a href="catalogoSociosComerciales.html" class="linkFooter">Socios comerciales</a></li>
+            <li><a href="puntosDeRetiro.html" class="linkFooter"> Puntos de retiro</a></li>
+            <li> <a href="landingPageEquipo.html" class="linkFooter">SkyTechCR Solutions</a></li>
+            <li> <a href="ayuda.html" class="linkFooter">Ayuda</a></li>
+
+
+
+        </ul>
+    </footer>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/servicioGeneral.js"></script>
     <script src="js/listarLibros2.js"></script>
+    <script src="js/agregarAlCarrito.js"></script>
 </body>
 
 </html>

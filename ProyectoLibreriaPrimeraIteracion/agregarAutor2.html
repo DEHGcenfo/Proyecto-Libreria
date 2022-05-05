@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar puntos de retiro</title>
+    <title>Agregar autor</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/agregarPuntosDeRetiro.css">
     <link rel="stylesheet" href="css/headerFooter.css">
@@ -41,61 +41,60 @@
 
         </nav>
     </header>
+
+    <section id="main">
     <section id="sctPuntosDeRetiro">
         <i class="fa-solid fa-lock-keyhole"></i>
         <section id="sct2">
-            <h1>Puntos de retiro</h1>
+            <h1>Agregar autor </h1>
             <form>
                 <div class="contControl">
-                    <label for="txtNombre">Nombre</label>
+                    <label for="tituloAutor">Nombre del autor</label>
                 </div>
                 <div class="contControl">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Nombre" id="txt-nombre">
+                    <input type="text" placeholder="Nombre" id="tituloAutor">
 
                 </div>
+                <div>
+                    <label for="insertImage">Subir la foto del autor</label>
+                    <img id="fotoAgregar">
+                    <div><input type="file" id="insertImage"></div>
+                </div>
+
 
                 <div class="contControl">
-                    <label for="txtProvincia">Provincia</label>
+                    <label for="premiosAutor">Premios del autor</label>
                 </div>
                 <div class="contControl">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Provincia" id="slt-provincias">
-                </div>
-
-                <div class="contControl">
-                    <label for="txtCorreo">Dirección exacta</label>
+                    <input type="text" placeholder="Premios" id="premiosAutor">
                 </div>
                 <div class="contControl">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Dirección" id="txt-direccionExacta">
-
-                </div>
-                <div class="contControl">
-                    <label for="txtCorreo">Correo</label>
+                    <label for="resenaAutor">Reseña del autor</label>
                 </div>
                 <div class="contControl">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Correo electrónico" id="txt-correo">
+                    <input type="text" placeholder="Reseña" id="resenaAutor">
 
                 </div>
                 <div class="contControl">
-                    <label for="txtTelefono">Teléfono</label>
+                    <label for="detallesAutor">Detalles del autor</label>
                 </div>
                 <div class="contControl">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Número de telefono" id="txt-telefono">
+                    <input type="text" placeholder="Detalles" id="detallesAutor">
 
                 </div>
 
                 <div class="botonBorde">
-                    <button type="button" id="btnAgregar" class="btnInicioSesion">Agregar</button>
+                    <button type="button" id="tenth-btn" class="btnInicioSesion">Agregar</button>
                 </div>
             </form>
         </section>
 
     </section>
-
+</section>
     <footer id="pie-de-pagina">
         <ul id="listaFooter">
             <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
@@ -111,7 +110,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/servicioGeneral.js"></script>
-    <script src="js/agregarPuntosDeRetiro.js"></script>
+    <script src="js/agregarAutor.js"></script>
 </body>
 
 </html>
