@@ -2,25 +2,11 @@ let correoUsuario = JSON.parse(localStorage.getItem('usuarioConectado')).correo
 
 
 
-const enviar = () => {
-    for (let i = 0; i < listaLibros.length; i++) {
-        let coleccion = []
-        coleccion[i] = listaLibros[i]
-        coleccion.forEach(Aux => {
+const enviar = (librosSelect) => {
 
-            localStorage.setItem('libroAgregado', JSON.stringify(Aux));
+    //localStorage.setItem('libroAgregado', JSON.stringify(Aux));
 
-        });
-    }
-    /*for (let i = 0; i < listaLibros.length; i++) {
-        let coleccion = listaLibros[i]
-        coleccion.forEach(Aux => {
-
-            localStorage.setItem('libroAgregado', JSON.stringify(Aux));
-
-        });
-    }*/
-    agregarLibro()
+    agregarLibro(librosSelect)
 }
 
 
@@ -29,23 +15,27 @@ const enviar = () => {
 
 
 
-const agregarLibro = () => {
+const agregarLibro = (librosSelect) => {
 
-    let isbn = JSON.parse(localStorage.getItem('libroAgregado')).isbn
+    /*let isbn = JSON.parse(localStorage.getItem('libroAgregado')).isbn
     let titulo = JSON.parse(localStorage.getItem('libroAgregado')).titulo
     let foto = JSON.parse(localStorage.getItem('libroAgregado')).foto
     let formato = JSON.parse(localStorage.getItem('libroAgregado')).formato
     let autor = JSON.parse(localStorage.getItem('libroAgregado')).autor
-    let precio = JSON.parse(localStorage.getItem('libroAgregado')).precio
-    let data = {
-        correo: correoUsuario,
-        isbn: isbn,
-        titulo: titulo,
-        foto: foto,
-        formato: formato,
-        autor: autor,
-        precio: precio
-    }
+    let precio = JSON.parse(localStorage.getItem('libroAgregado')).precio*/
+    librosSelect.forEach(libro => {
+        let data = {
+            correo: correoUsuario,
+            isbn: libro.isbn,
+            titulo: libro.titulo,
+            foto: libro.foto,
+            formato: libro.formato,
+            autor: libro.autor,
+            precio: libro.precio
+        }
 
-    registrarDatos('registrar-compra', data)
+        registrarDatos('registrar-compra', data)
+    });
+
+
 }

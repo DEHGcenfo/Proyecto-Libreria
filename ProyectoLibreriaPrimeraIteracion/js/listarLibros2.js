@@ -1,6 +1,6 @@
 const seccionCartas = document.querySelector('#sct-contenedor-cartas')
 const inputFiltro = document.getElementById('txt-filtro')
-
+const confirmar = document.getElementById('btnConfirmar')
 
 
 
@@ -12,13 +12,12 @@ const inicializar = async() => {
     mostrarDatos()
 }
 
+let librosSelect = []
 
-
-/*const llamarID = () =>{
-    listaLibros.forEach(llamarObjetos =>{
-        
-    })
-}*/
+confirmar.addEventListener('click', () => {
+    enviar(librosSelect)
+        //window.location.href = 'carritoDeCompras.html'
+})
 
 const mostrarDatos = () => {
     seccionCartas.innerHTML = ''
@@ -28,6 +27,9 @@ const mostrarDatos = () => {
             let carta = document.createElement('div')
             carta.classList.add('carta')
 
+<<<<<<< HEAD
+            let titulo = document.createElement('a')
+=======
             let contInfo = document.createElement('section')
             contInfo.classList.add('contInfo')
 
@@ -39,6 +41,7 @@ const mostrarDatos = () => {
             divDerecho.classList.add('divDerecho')
 
             let titulo = document.createElement('h2')
+>>>>>>> ef37fb4412b796a69c7e1be5e6cffd20c8b577fb
             titulo.classList.add('titulo')
             titulo.textContent = llamarObjetos.titulo
 
@@ -70,13 +73,11 @@ const mostrarDatos = () => {
             let btnComprar = document.createElement('button')
             btnComprar.classList.add('btnComprar')
             btnComprar.innerHTML = 'Agregar al carrito'
+            btnComprar.addEventListener('click', () => {
+                librosSelect.push(llamarObjetos)
+            })
 
 
-            for (let i = 0; i < listaLibros.length; i++) {
-
-                btnComprar.addEventListener('click', enviar)
-
-            }
             //btnComprar.addEventListener('click', agregaCompra)
 
 
