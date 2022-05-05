@@ -121,6 +121,7 @@ const agregaCompra = () => {
         btnComprar[i].addEventListener('click', registrarCompra, false);
     }
 }*/
+
 inicializar();
 inputFiltro.addEventListener("keyup", () => {
 
