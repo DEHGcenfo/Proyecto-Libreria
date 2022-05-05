@@ -12,12 +12,12 @@ const inicializar = async() => {
     mostrarDatos()
 }
 
-/*let librosSelect = []
+let librosSelect = []
 
 confirmar.addEventListener('click', () => {
     enviar(librosSelect)
-        //window.location.href = 'carritoDeCompras.html'
-})*/
+    window.location.href = 'carritoDeCompras.html'
+})
 
 const mostrarDatos = () => {
     seccionCartas.innerHTML = ''
@@ -98,27 +98,6 @@ const mostrarDatos = () => {
     });
 };
 
-/*const registrarCompra = () => {
-
-    let data = {
-
-        titulo: tituloLibro.value,
-
-        isbn: isbnLibro.value,
-
-        idioma: idiomaLibro.value,
-
-        formato: formatoLibro.value,
-        autor: autorLibro.value,
-        precio: precioLibro.value
-    }
-    registrarDatos("registrar-compra", data)
-};
-const agregaCompra = () => {
-    for (let i = 0; i < btnComprar.length; i++) {
-        btnComprar[i].addEventListener('click', registrarCompra, false);
-    }
-}*/
 
 inicializar();
 inputFiltro.addEventListener("keyup", () => {
