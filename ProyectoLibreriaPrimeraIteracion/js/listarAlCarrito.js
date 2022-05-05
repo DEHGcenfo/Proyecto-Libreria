@@ -3,7 +3,11 @@ const cuerpoTabla = document.querySelector('#tbCarritoCompras')
 let listaDeLibros = []
 
 const inicializar = async() => {
-    listaDeLibros = await obtenerDatosConParametro('listar-compra')
+    let data = {
+        correo: JSON.parse(localStorage.getItem('usuarioConectado')).correo
+
+    };
+    listaDeLibros = await obtenerDatosConParametro('listar-compra-por-correo', data)
     mostrarDatos()
 }
 

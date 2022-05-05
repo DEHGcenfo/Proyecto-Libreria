@@ -49,7 +49,7 @@ const obtenerDatosConParametro = async(endpoint, data) => {
     await axios({
             'url': url,
             'method': 'get',
-            'params': { 'correo': data.correo },
+            'params': { correo: data.correo },
             'responseType': 'json'
         })
         .then(response => {

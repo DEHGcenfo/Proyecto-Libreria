@@ -16,7 +16,7 @@ let librosSelect = []
 
 confirmar.addEventListener('click', () => {
     enviar(librosSelect)
-        //window.location.href = 'carritoDeCompras.html'
+    window.location.href = 'carritoDeCompras.html'
 })
 
 const mostrarDatos = () => {
@@ -27,9 +27,6 @@ const mostrarDatos = () => {
             let carta = document.createElement('div')
             carta.classList.add('carta')
 
-<<<<<<< HEAD
-            let titulo = document.createElement('a')
-=======
             let contInfo = document.createElement('section')
             contInfo.classList.add('contInfo')
 
@@ -41,7 +38,6 @@ const mostrarDatos = () => {
             divDerecho.classList.add('divDerecho')
 
             let titulo = document.createElement('h2')
->>>>>>> ef37fb4412b796a69c7e1be5e6cffd20c8b577fb
             titulo.classList.add('titulo')
             titulo.textContent = llamarObjetos.titulo
 
@@ -74,8 +70,25 @@ const mostrarDatos = () => {
             btnComprar.classList.add('btnComprar')
             btnComprar.innerHTML = 'Agregar al carrito'
             btnComprar.addEventListener('click', () => {
+                let push = false
                 librosSelect.push(llamarObjetos)
+                push = true
+                if (push == true) {
+                    Swal.fire({
+                        "icon": "success",
+
+                        "text": "Libro agregado al carrito"
+                    })
+                } else {
+                    Swal.fire({
+                        "icon": "warning",
+                        "title": "Algo salió mal",
+
+                    })
+                }
+
             })
+
 
 
             //btnComprar.addEventListener('click', agregaCompra)

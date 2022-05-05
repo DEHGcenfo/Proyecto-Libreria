@@ -5,7 +5,7 @@ const router = express.Router()
 
 router.post('/registrar-compra', (req, res) => {
     let nuevoAgregar = new Agregar({
-        //datos: req.body.datos,
+
         correo: req.body.correo,
         titulo: req.body.titulo,
         foto: req.body.src,
@@ -49,4 +49,20 @@ router.get('/listar-compra', (req, res) => {
         }
     })
 })
+
+router.get('/listar-compra-por-correo', (req, res) => {
+    let correoUsuario = req.query.correo;
+    Agregar.find({ correo: correoUsuario }, (error, lista) => {
+        if (error) {
+            res.json({
+                msj: 'No se pudo listar los métodos de pago',
+                error
+            });
+        } else {
+            res.json({
+                lista
+            });
+        }
+    });
+});
 module.exports = router
