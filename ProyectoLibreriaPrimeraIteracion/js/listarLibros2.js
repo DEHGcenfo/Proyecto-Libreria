@@ -37,7 +37,8 @@ const mostrarDatos = () => {
             let divDerecho = document.createElement('div')
             divDerecho.classList.add('divDerecho')
 
-            let titulo = document.createElement('h2')
+            let titulo = document.createElement('a')
+            titulo.setAttribute('href', 'perfilLibro.html?isbn=' + llamarObjetos.isbn)
             titulo.classList.add('titulo')
             titulo.textContent = llamarObjetos.titulo
 
