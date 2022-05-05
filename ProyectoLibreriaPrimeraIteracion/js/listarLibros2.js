@@ -27,15 +27,15 @@ const mostrarDatos = () => {
             let carta = document.createElement('div')
             carta.classList.add('carta')
 
-            let contInfo = document.createElement('div')
+            let contInfo = document.createElement('section')
             contInfo.classList.add('contInfo')
+
 
             let divIzquierdo = document.createElement('div')
             divIzquierdo.classList.add('divIzquierdo')
 
             let divDerecho = document.createElement('div')
             divDerecho.classList.add('divDerecho')
-
 
             let titulo = document.createElement('a')
             titulo.setAttribute('href', 'perfilLibro.html?isbn=' + llamarObjetos.isbn)
@@ -71,8 +71,25 @@ const mostrarDatos = () => {
             btnComprar.classList.add('btnComprar')
             btnComprar.innerHTML = 'Agregar al carrito'
             btnComprar.addEventListener('click', () => {
+                let push = false
                 librosSelect.push(llamarObjetos)
+                push = true
+                if (push == true) {
+                    Swal.fire({
+                        "icon": "success",
+
+                        "text": "Libro agregado al carrito"
+                    })
+                } else {
+                    Swal.fire({
+                        "icon": "warning",
+                        "title": "Algo salió mal",
+
+                    })
+                }
+
             })
+
 
 
             //btnComprar.addEventListener('click', agregaCompra)
@@ -98,7 +115,27 @@ const mostrarDatos = () => {
     });
 };
 
+/*const registrarCompra = () => {
 
+    let data = {
+
+        titulo: tituloLibro.value,
+
+        isbn: isbnLibro.value,
+
+        idioma: idiomaLibro.value,
+
+        formato: formatoLibro.value,
+        autor: autorLibro.value,
+        precio: precioLibro.value
+    }
+    registrarDatos("registrar-compra", data)
+};
+const agregaCompra = () => {
+    for (let i = 0; i < btnComprar.length; i++) {
+        btnComprar[i].addEventListener('click', registrarCompra, false);
+    }
+}*/
 inicializar();
 inputFiltro.addEventListener("keyup", () => {
 
