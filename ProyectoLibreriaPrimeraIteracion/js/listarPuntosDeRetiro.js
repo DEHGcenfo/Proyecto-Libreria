@@ -18,7 +18,9 @@ const mostrarDatos = () => {
             let carta = document.createElement('div')
             carta.classList.add('carta')
 
-            let nombre = document.createElement('h2')
+
+
+            let nombre = document.createElement('h1')
             nombre.classList.add('nombre')
             nombre.textContent = llamarObjetos.nombre
 

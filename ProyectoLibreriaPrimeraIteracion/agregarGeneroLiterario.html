@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/agregarGeneroLiterario.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
     <title>Document</title>
 </head>
 
@@ -36,37 +37,58 @@
             </nav>
         </header>
 
+
+        <div class="breadCrumbs">
+            <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+            <div><a href="listarLibros.html"><button class="breadCrums">Libros</button></a></div>
+            <div><a href="Autores.html"><button class="breadCrums">Autores</button></a></div>
+        </div>
         <section id="formulario">
-            <div class="breadCrumbs">
-                <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
-                <div><a href="listarLibros.html"><button class="breadCrums">Libros</button></a></div>
-                <div><a href="Autores.html"><button class="breadCrums">Autores</button></a></div>
-
-
-            </div>
-            <div id="contenido">
-                <h1 id="titulo">Agregar genero literario</h1>
-                <form>
-                    <label for="nombreGenero">Nombre del genero literario</label>
-                    <div><input type="text" id="nombreGenero"></div>
-                    <section id="sectionPerfil">
-                        <div>
-                            <label for="insertImage">Sube la foto del genero literario</label>
-                            <div><input type="file" id="insertImage"></div>
+            <section id="sctPuntosDeRetiro">
+                <i class="fa-solid fa-lock-keyhole"></i>
+                <section id="sct2">
+                    <h1>Agregar socio comercial</h1>
+                    <form>
+                        <div id="divFile">
+                            <p id="textoBotonFoto">Imagen representativa</p>
+                            <input type="file" id="txt-fotoPerfil"></input>
                         </div>
 
-                        <div>
-                            <label for="descripcionGenero">ID# del genero literario</label>
-                            <div><input type="text" id="IdGenero" placeholder="#00000x"></div>
+                        <div class="contControl">
+                            <label for="txtNombre">Nombre del genero</label>
+                        </div>
+                        <div class="contControl">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" id="nombreGenero">
+
                         </div>
 
 
 
-                        <div><button id="tenth-btn" type="button">Guardar cambios</button></div>
+                        <div class="contControl">
+                            <label for="txtUbicacion">Id del genero</label>
+                        </div>
+                        <div class="contControl">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" id="IdGenero" placeholder="#00000x"></input>
 
-            </div>
+                        </div>
+                        <div class="contControl">
+                            <label for="txtCorreo">Numero de telefono</label>
+                        </div>
+
+
+                        <div class="botonBorde">
+                            <button id="tenth-btn" type="button">Guardar cambios</button>
+                        </div>
+                    </form>
+                </section>
+
             </section>
-            </form>
+
+
+        </section>
+        </form>
         </section>
         <footer id="pie-de-pagina">
             <ul id="listaFooter">
