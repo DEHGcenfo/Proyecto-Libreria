@@ -12,12 +12,12 @@ const inicializar = async() => {
     mostrarDatos()
 }
 
-let librosSelect = []
+/*let librosSelect = []
 
 confirmar.addEventListener('click', () => {
     enviar(librosSelect)
         //window.location.href = 'carritoDeCompras.html'
-})
+})*/
 
 const mostrarDatos = () => {
     seccionCartas.innerHTML = ''
@@ -27,12 +27,8 @@ const mostrarDatos = () => {
             let carta = document.createElement('div')
             carta.classList.add('carta')
 
-<<<<<<< HEAD
-            let titulo = document.createElement('a')
-=======
-            let contInfo = document.createElement('section')
+            let contInfo = document.createElement('div')
             contInfo.classList.add('contInfo')
-
 
             let divIzquierdo = document.createElement('div')
             divIzquierdo.classList.add('divIzquierdo')
@@ -40,8 +36,8 @@ const mostrarDatos = () => {
             let divDerecho = document.createElement('div')
             divDerecho.classList.add('divDerecho')
 
-            let titulo = document.createElement('h2')
->>>>>>> ef37fb4412b796a69c7e1be5e6cffd20c8b577fb
+
+            let titulo = document.createElement('a')
             titulo.classList.add('titulo')
             titulo.textContent = llamarObjetos.titulo
 
