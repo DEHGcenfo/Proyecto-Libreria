@@ -18,39 +18,72 @@ const mostrarDatos = () => {
             let carta = document.createElement('div')
             carta.classList.add('carta')
 
+            let foto = document.createElement('div')
+            foto.classList.add('foto')
+            foto.src = llamarObjetos.fotoUsuario
+
             let nombre = document.createElement('h2')
             nombre.classList.add('nombre')
-            nombre.textContent = llamarObjetos.correo
+            nombre.textContent = `Nombre del Usuario: ${llamarObjetos.nombre}`
+
+            let correo = document.createElement('p')
+            correo.classList.add('correo')
+            correo.textContent = `Correo Electrónico: ${llamarObjetos.correo}`
 
             let genero = document.createElement('p')
-            genero.textContent = llamarObjetos.genero
+            let tipo = ""
+            if (llamarObjetos.genero == 1) {
+                tipo = "Masculino"
+            } else if (llamarObjetos.genero == 2) {
+                tipo = "Femenino"
+            } else {
+                tipo = "Otro"
+            }
+            genero.textContent = `Género: ${tipo}`
 
             let identificacion = document.createElement('p')
-            identificacion.textContent = llamarObjetos.identificacion
+            identificacion.textContent = `Identificación ${llamarObjetos.identificacion}`
 
             let provincia = document.createElement('p')
-            provincia.textContent = llamarObjetos.provincia
+            let tipoProv = ""
+            if (llamarObjetos.provincia == 1) {
+                tipoProv = "Limón"
+            } else if (llamarObjetos.provincia == 2) {
+                tipoProv = "Puntarenas"
+            } else if (llamarObjetos.provincia == 3) {
+                tipoProv = "Guanacaste"
+            } else if (llamarObjetos.provincia == 4) {
+                tipoProv = "Heredia"
+            } else if (llamarObjetos.provincia == 5) {
+                tipoProv = "Cartago"
+            } else if (llamarObjetos.provincia == 6) {
+                tipoProv = "Alajuela"
+            } else if (llamarObjetos.provincia == 7) {
+                tipoProv = "San José"
+            }
+            provincia.textContent = `Provincia: ${tipoProv}`
 
             let canton = document.createElement('p')
-            canton.textContent = llamarObjetos.canton
+            canton.textContent = `Cantón: ${llamarObjetos.canton}`
 
             let distrito = document.createElement('p')
-            distrito.textContent = llamarObjetos.distrito
+            distrito.textContent = `Distrito: ${llamarObjetos.distrito}`
 
             let direccionExacta = document.createElement('p')
-            direccionExacta.textContent = llamarObjetos.direccionExacta
+            direccionExacta.textContent = `Dirección: ${llamarObjetos.direccionExacta}`
 
-            let estado = document.createElement('p')
-            estado.textContent = llamarObjetos.estado
 
+
+            carta.appendChild(foto)
             carta.appendChild(nombre)
+            carta.appendChild(correo)
             carta.appendChild(genero)
             carta.appendChild(identificacion)
             carta.appendChild(provincia)
             carta.appendChild(canton)
             carta.appendChild(distrito)
             carta.appendChild(direccionExacta)
-            carta.appendChild(estado)
+
             seccionCartas.appendChild(carta)
 
 

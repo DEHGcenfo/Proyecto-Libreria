@@ -43,58 +43,66 @@
     </header>
 
     <section id="main">
-    <section id="sctPuntosDeRetiro">
-        <i class="fa-solid fa-lock-keyhole"></i>
-        <section id="sct2">
-            <h1>Agregar autor </h1>
-            <form>
-                <div class="contControl">
-                    <label for="tituloAutor">Nombre del autor</label>
-                </div>
-                <div class="contControl">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Nombre" id="tituloAutor">
-
-                </div>
-                <div>
-                    <label for="insertImage">Subir la foto del autor</label>
-                    <img id="fotoAgregar">
-                    <div><input type="file" id="insertImage"></div>
-                </div>
+        <div class="breadCrumbs">
+            <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
+            <div><a href="listarLibros.html"><button class="breadCrums">Libros</button></a></div>
+            <div><a href="AutoresNuevo.html"><button class="breadCrums">Autores</button></a></div>
 
 
-                <div class="contControl">
-                    <label for="premiosAutor">Premios del autor</label>
-                </div>
-                <div class="contControl">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Premios" id="premiosAutor">
-                </div>
-                <div class="contControl">
-                    <label for="resenaAutor">Reseña del autor</label>
-                </div>
-                <div class="contControl">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Reseña" id="resenaAutor">
+        </div>
 
-                </div>
-                <div class="contControl">
-                    <label for="detallesAutor">Detalles del autor</label>
-                </div>
-                <div class="contControl">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Detalles" id="detallesAutor">
+        <section id="sctPuntosDeRetiro">
+            <i class="fa-solid fa-lock-keyhole"></i>
+            <section id="sct2">
+                <h1>Agregar autor </h1>
+                <form>
+                    <div class="contControl">
+                        <label for="tituloAutor">Nombre del autor</label>
+                    </div>
+                    <div class="contControl">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Nombre" id="tituloAutor">
 
-                </div>
+                    </div>
+                    <div>
+                        <label for="insertImage">Subir la foto del autor</label>
+                        <img id="fotoAgregar">
+                        <div><input type="file" id="insertImage"></div>
+                    </div>
 
-                <div class="botonBorde">
-                    <button type="button" id="tenth-btn" class="btnInicioSesion">Agregar</button>
-                </div>
-            </form>
+
+                    <div class="contControl">
+                        <label for="premiosAutor">Premios del autor</label>
+                    </div>
+                    <div class="contControl">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Premios" id="premiosAutor">
+                    </div>
+                    <div class="contControl">
+                        <label for="resenaAutor">Reseña del autor</label>
+                    </div>
+                    <div class="contControl">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Reseña" id="resenaAutor">
+
+                    </div>
+                    <div class="contControl">
+                        <label for="detallesAutor">Detalles del autor</label>
+                    </div>
+                    <div class="contControl">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Detalles" id="detallesAutor">
+
+                    </div>
+
+                    <div class="botonBorde">
+                        <button type="button" id="tenth-btn" class="btnInicioSesion">Agregar</button>
+                    </div>
+                </form>
+            </section>
+
         </section>
-
     </section>
-</section>
     <footer id="pie-de-pagina">
         <ul id="listaFooter">
             <li><a href="landingPageEquipo.html" class="linkFooter">¿Quiénes somos?</a></li>
@@ -109,7 +117,9 @@
     </footer>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
     <script src="js/servicioGeneral.js"></script>
+    <script src="js/servicioImagenes.js"></script>
     <script src="js/agregarAutor.js"></script>
 </body>
 

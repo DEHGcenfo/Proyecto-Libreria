@@ -11,8 +11,8 @@ const inicializar = async() => {
 }
 const mostrarDatos = () => {
     seccionCartas.innerHTML = ''
-    listaSociosComerciales.forEach(llamarObjetos => {
-        if (llamarObjetos.nombreSocio.toLowerCase().includes(inputFiltro.value.toLowerCase())) {
+    listaPuntosDeRetiro.forEach(llamarObjetos => {
+        if (llamarObjetos.nombre.toLowerCase().includes(inputFiltro.value.toLowerCase()) || llamarObjetos.correo.toLowerCase().includes(inputFiltro.value.toLowerCase())) {
 
 
             let carta = document.createElement('div')
@@ -22,7 +22,7 @@ const mostrarDatos = () => {
 
             let nombreSocio = document.createElement('h1')
             nombreSocio.classList.add('nombre')
-            nombreSocio.textContent = llamarObjetos.nombreSocio
+            nombreSocio.textContent = llamarObjetos.nombre
 
             let ubicacionSocio = document.createElement('p')
             ubicacionSocio.textContent = llamarObjetos.ubicacionSocio
@@ -31,12 +31,11 @@ const mostrarDatos = () => {
             telefonoSocio.textContent = llamarObjetos.telefonoSocio
 
 
-
             carta.appendChild(nombreSocio)
             carta.appendChild(ubicacionSocio)
             carta.appendChild(telefonoSocio)
 
-            seccionCartas.appendChild(carta)
+
 
 
         }
