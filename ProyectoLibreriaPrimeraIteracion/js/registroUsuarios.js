@@ -35,6 +35,13 @@ const registrarUsuario = () => {
 
     }
     registrarDatos("registrar-usuario", data)
+    let direccion = ''
+    if (tipoUsuario == 1) {
+        direccion = 'landingPageAdmin.html'
+    } else if (tipoUsuario == 2) {
+        direccion = 'landingPageCliente.html'
+    }
+    window.location.href = direccion
 };
 
 const validar = () => {
