@@ -45,14 +45,7 @@ const mostrarDatos = (libroEncontrado) => {
 
 
 
-    let isbn = document.createElement('p')
-    isbn.classList.add('isbn')
-    isbn.textContent = `ISBN: ${libroEncontrado.isbn}`
 
-
-    let formato = document.createElement('p')
-    formato.classList.add('formato')
-    formato.textContent = libroEncontrado.formato
 
     let autor = document.createElement('p')
     autor.classList.add('autor')
@@ -61,6 +54,15 @@ const mostrarDatos = (libroEncontrado) => {
     let precio = document.createElement('p')
     precio.classList.add('precio')
     precio.textContent = libroEncontrado.precio
+
+    let isbn = document.createElement('p')
+    isbn.classList.add('isbn')
+    isbn.textContent = `ISBN: ${libroEncontrado.isbn}`
+
+
+    let formato = document.createElement('p')
+    formato.classList.add('formato')
+    formato.textContent = `Formato: ${libroEncontrado.formato}`
 
 
     carta.appendChild(titulo)
