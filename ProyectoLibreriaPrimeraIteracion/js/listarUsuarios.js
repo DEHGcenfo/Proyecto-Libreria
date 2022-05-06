@@ -18,7 +18,7 @@ const mostrarDatos = () => {
             let carta = document.createElement('div')
             carta.classList.add('carta')
 
-            let foto = document.createElement('div')
+            let foto = document.createElement('img')
             foto.classList.add('foto')
             foto.src = llamarObjetos.fotoUsuario
 
