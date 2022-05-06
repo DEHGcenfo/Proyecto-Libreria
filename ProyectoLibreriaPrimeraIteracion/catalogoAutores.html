@@ -48,23 +48,16 @@
             <div><a href="catalogosGeneral.html"><button class="breadCrums">Catalogos</button></a></div>
 
         </div>
-        <table id="tbListaAutores">
+        <div class="cont-titulo">
             <h1>Lista de autores</h1>
-            <Thead id="thAutor">
-                <tr>
-                    <th>Imagen del autor</th>
-                    <th>Descripción</th>
-                </tr>
+
+        </div>
+        <label for="busacarAutor">Filtrar</label>
+        <input type="text" id="busacarAutor">
+        <section id="seccionAutores">
 
 
-            </Thead>
-
-            <tbody id="tbAutor">
-
-            </tbody>
-
-
-        </table>
+        </section>
 
 
     </section>
@@ -85,8 +78,10 @@
     </footer>
 
 
-    <script src="js/registroAutores.js"></script>
-    <script src="js/listarAutores.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicioGeneral.js"></script>
+    <script src="js/listarAutores2.js"></script>
 
 
 </body>

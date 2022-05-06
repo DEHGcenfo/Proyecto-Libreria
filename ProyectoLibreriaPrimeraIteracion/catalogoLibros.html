@@ -41,37 +41,28 @@
 
     </div>
 
+
     <a href="landingPageAdmin.html" id="btnInicio"><button class="breadCrums">Inicio</button></a>
-    <section id="sectionListaLibro">
-        <div class="breadCrumbs">
-            <div><a href="listarGenerosLiterarios.html"><button class="breadCrums">Generos literarios</button></a></div>
-            <div><a href="Autores.html"><button class="breadCrums">Autores</button></a></div>
-            <div><a href="editarPerfilLibro.html"><button class="breadCrums">Editar libro</button></a></div>
+    <a href="catalogosGeneral.html" id="btnInicio"><button class="breadCrums">Catálogos</button></a>
+
+
+
+
+
+
+    <h1>Libros</h1>
+    <section id="sct-filtro">
+
+        <div class="filtro">
+            <label for="txt-filtro" id="labelFiltro">Filtrar</label>
+            <input type="text" id="txt-filtro" placeholder="Escriba el nombre del libro">
+
         </div>
-        <h1 id="tituloListaLibros">Lista de libros</h1>
-        <table id="tbListaLibro">
-            <Thead id="thLibro">
-                <tr>
+        <a href="agregarLibro2.html" id="btnInicio"><button type="button" class="breadCrums">Agregar libro</button></a>
+        <button type="button" id="btnConfirmar">Confirmar Pedido</button>
+    </section>
 
-                    <th>Foto</th>
-
-                    <th>Nombre</th>
-
-                    <th>Descripción</th>
-
-                    <th>Plumas</th>
-
-                    <th>Precio</th>
-
-
-                </tr>
-
-            </Thead>
-
-            <tbody id="tblContent"></tbody>
-
-        </table>
-
+    <section id="sct-contenedor-cartas">
 
     </section>
 
@@ -90,8 +81,11 @@
         </ul>
     </footer>
 
-    <script src="js/registroLibrosEditar.js"></script>
-    <script src="js/listarLibros.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicioGeneral.js"></script>
+    <script src="js/listarLibros2.js"></script>
+    <script src="js/agregarAlCarrito.js"></script>
 
 
 
