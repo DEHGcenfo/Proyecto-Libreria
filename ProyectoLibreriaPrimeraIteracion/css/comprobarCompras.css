@@ -163,24 +163,23 @@ ul li {
 }
 
 #contIzquierda {
-    width: 50%;
-    height: 100%;
+   width: 400px;
+   margin-left: 50px;
 }
 
 #contDerecha {
-    padding-top: 100px;
     width: 50%;
     height: 100%;
 }
 
 .subContIzquierda {
     padding-left: 15px;
-    padding-top: 50px;
 }
 
 .subContDerecha {
-    padding-left: 15px;
-    padding-top: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .datosTarjeta {
@@ -286,7 +285,7 @@ ul li {
 
 #subContDerechaBotones {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     position: relative;
     top: 80px;
     margin-bottom: 50px;
@@ -314,4 +313,34 @@ ul li {
 
 .input-error {
     border: 4px solid #B33771;
+}
+
+#link{
+
+text-decoration: none;
+color: black;
+font-size: 30px;
+text-align: center;
+margin-top: 70px;
+margin-bottom: -70px;
+}
+
+#link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#contIzquierda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.datosTarjeta{
+    margin-bottom: 30px;
+}
+
+#codigoCVV{
+    width: 200px;
 }
