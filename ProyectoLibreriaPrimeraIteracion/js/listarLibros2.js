@@ -65,7 +65,7 @@ const mostrarDatos = () => {
 
             let precio = document.createElement('p')
             precio.classList.add('precio')
-            precio.textContent = llamarObjetos.precio
+            precio.textContent = `Precio en colones ${llamarObjetos.precio}`
 
 
 
