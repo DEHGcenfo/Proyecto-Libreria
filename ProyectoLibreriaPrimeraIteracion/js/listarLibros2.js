@@ -30,6 +30,7 @@ const mostrarDatos = () => {
             let contInfo = document.createElement('section')
             contInfo.classList.add('contInfo')
 
+
             let divIzquierdo = document.createElement('div')
             divIzquierdo.classList.add('divIzquierdo')
 
@@ -135,7 +136,6 @@ const agregaCompra = () => {
         btnComprar[i].addEventListener('click', registrarCompra, false);
     }
 }*/
-
 inicializar();
 inputFiltro.addEventListener("keyup", () => {
 
