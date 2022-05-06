@@ -8,8 +8,10 @@ let listaLibros = []
 
 
 const inicializar = async() => {
+
     listaLibros = await obtenerDatos('listar-libros')
     mostrarDatos()
+    console.log(listaLibros)
 }
 
 let librosSelect = []
@@ -54,7 +56,7 @@ const mostrarDatos = () => {
 
             let formato = document.createElement('p')
             formato.classList.add('formato')
-            formato.textContent = llamarObjetos.formato
+            formato.textContent = `Formato: ${llamarObjetos.formato}`
 
             let autor = document.createElement('p')
             autor.classList.add('autor')
@@ -91,7 +93,7 @@ const mostrarDatos = () => {
 
 
 
-            //btnComprar.addEventListener('click', agregaCompra)
+
 
 
 
