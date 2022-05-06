@@ -24,10 +24,6 @@ const mostrarDatos = (usuarioEncontrado) => {
     let carta = document.createElement('div')
     carta.classList.add('carta')
 
-    let contInfo = document.createElement('section')
-    contInfo.classList.add('contInfo')
-
-
     let divIzquierdo = document.createElement('div')
     divIzquierdo.classList.add('divIzquierdo')
 
@@ -50,29 +46,43 @@ const mostrarDatos = (usuarioEncontrado) => {
     genero.classList.add('genero')
     genero.textContent = `Genero: ${usuarioEncontrado.genero}`
 
+    let provincia = document.createElement('p')
+    provincia.classList.add('provincia')
+    provincia.textContent = `Provincia: ${usuarioEncontrado.provincia}`
 
-    /*let formato = document.createElement('p')
-    formato.classList.add('formato')
-    formato.textContent = usuarioEncontrado.formato
+    let canton = document.createElement('p')
+    canton.classList.add('canton')
+    canton.textContent = `Canton: ${usuarioEncontrado.canton}`
 
-    let autor = document.createElement('p')
-    autor.classList.add('autor')
-    autor.textContent = usuarioEncontrado.autor
+    let distrito = document.createElement('p')
+    distrito.classList.add('distrito')
+    distrito.textContent = `Distrito: ${usuarioEncontrado.distrito}`
 
-    let precio = document.createElement('p')
-    precio.classList.add('precio')
-    precio.textContent = usuarioEncontrado.precio
-*/
 
-    carta.appendChild(nombre)
-    carta.appendChild(fotoUsuario)
-    carta.appendChild(contInfo)
-    divIzquierdo.appendChild(genero)
+    let direccionExacta = document.createElement('p')
+    direccionExacta.classList.add('direccionExacta')
+    direccionExacta.textContent = `Dirección exacta: ${usuarioEncontrado.direccionExacta}`
+
+    let correo = document.createElement('p')
+    correo.classList.add('correo')
+    correo.textContent = usuarioEncontrado.correo
+
+
+
     divIzquierdo.appendChild(identificacion)
-        /*divIzquierdo.appendChild(formato)
-        divDerecho.appendChild(precio)*/
-    contInfo.appendChild(divIzquierdo)
-    contInfo.appendChild(divDerecho)
+    divIzquierdo.appendChild(provincia)
+    divIzquierdo.appendChild(canton)
+    divIzquierdo.appendChild(distrito)
+    divIzquierdo.appendChild(direccionExacta)
+    divDerecho.appendChild(fotoUsuario)
+    divDerecho.appendChild(nombre)
+    divDerecho.appendChild(correo)
+
+    //divDerecho.appendChild(genero)
+    /*divIzquierdo.appendChild(formato)
+    divDerecho.appendChild(precio)*/
+    carta.appendChild(divIzquierdo)
+    carta.appendChild(divDerecho)
     seccionCartas.appendChild(carta)
 
 

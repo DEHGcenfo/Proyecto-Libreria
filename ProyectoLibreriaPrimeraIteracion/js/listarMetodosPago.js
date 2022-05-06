@@ -33,11 +33,11 @@ const mostrarDatos = () => {
 
         let numero = document.createElement('p')
         numero.classList.add('numero')
-        numero.textContent = metodo.numeroTarjeta
+        numero.textContent = `Numero de tarjeta: ${metodo.numeroTarjeta}`
 
         let fecha = document.createElement('p')
         fecha.classList.add('fecha')
-        fecha.textContent = metodo.fechaExpiracion
+        fecha.textContent = `Fecha Expiracion: ${metodo.fechaExpiracion}`
 
         let btnSelect = document.createElement('button')
         btnSelect.classList.add('btnComprar')

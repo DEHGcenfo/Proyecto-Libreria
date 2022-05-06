@@ -42,24 +42,24 @@ const mostrarDatos = () => {
 
         let nombre = document.createElement('label')
         nombre.classList.add('nombreTarjeta')
-        nombre.textContent = `Nombre de la tarjeta ${llamarObjetos.nombreTarjeta}`
+        nombre.textContent = `Nombre de la tarjeta: ${llamarObjetos.nombreTarjeta}`
 
         let numero = document.createElement('label')
         numero.classList.add('numeroTarjeta')
-        numero.innerHTML = `Numero de la tarjeta ${llamarObjetos.numeroTarjeta}`
+        numero.innerHTML = `Numero de la tarjeta: ${llamarObjetos.numeroTarjeta}`
 
         let fecha = document.createElement('p')
         fecha.classList.add('fechaExpiracion')
-        fecha.textContent = `Fecha de expiracion ${llamarObjetos.fechaExpiracion}`
+        fecha.textContent = `Fecha de expiracion: ${llamarObjetos.fechaExpiracion}`
 
 
         let nombreUsuario = document.createElement('p')
         nombreUsuario.classList.add('nombreUsuario')
-        nombreUsuario.textContent = `Nombre del usuario ${llamarObjetos.nombreUsuario}`
+        nombreUsuario.textContent = `Nombre del usuario: ${llamarObjetos.nombreUsuario}`
 
         let direccion = document.createElement('p')
         direccion.classList.add('direccion')
-        direccion.textContent = `Dirección del usuario ${llamarObjetos.direccionUsuario}`
+        direccion.textContent = `Dirección del usuario: ${llamarObjetos.direccionUsuario}`
 
 
         const alerta = () => {
@@ -93,16 +93,15 @@ const mostrarDatos = () => {
 
 
 
-        carta.appendChild(nombre)
-        carta.appendChild(numero)
-        carta.appendChild(contInfo)
-        divIzquierdo.appendChild(fecha)
-        divIzquierdo.appendChild(nombreUsuario)
+
+        divIzquierdo.appendChild(nombre)
+        divIzquierdo.appendChild(numero)
         divIzquierdo.appendChild(direccion)
-
-
-        contInfo.appendChild(divIzquierdo)
-        contInfo.appendChild(divDerecho)
+        divDerecho.appendChild(fecha)
+        divDerecho.appendChild(nombreUsuario)
+        divDerecho.appendChild(direccion)
+        carta.appendChild(divIzquierdo)
+        carta.appendChild(divDerecho)
         seccionCartas.appendChild(carta)
 
 
