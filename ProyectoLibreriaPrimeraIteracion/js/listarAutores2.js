@@ -21,15 +21,15 @@ const mostrarDatos = () => {
             foto.src = llamarObjetos.fotoAutor
 
             let premiosGanados = document.createElement('h2')
-            premiosGanados.textContent = llamarObjetos.premios
+            premiosGanados.textContent = `Premios ganados: ${llamarObjetos.premios}`
 
             let resennaAutor = document.createElement('p')
             resennaAutor.classList.add('resennaAutor')
-            resennaAutor.textContent = llamarObjetos.resena
+            resennaAutor.textContent = `Reseña: ${llamarObjetos.resena}`
 
             let detallesAutor = document.createElement('p')
             detallesAutor.classList.add('detallesAutor')
-            detallesAutor.textContent = llamarObjetos.detalles
+            detallesAutor.textContent = `Detalles: ${llamarObjetos.detalles}`
 
             carta.appendChild(tituloAutor)
             carta.appendChild(foto)
