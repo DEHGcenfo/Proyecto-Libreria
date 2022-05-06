@@ -38,67 +38,16 @@
 
 
 
-        <div class="breadCrumbs">
-            <div><a href="carritoDeCompras.html"><button class="breadCrums">Carrito</button></a></div>
-            <div><a href="landingPageAdmin.html"><button class="breadCrums">Inicio</button></a></div>
 
-        </div>
-        <h1 id="tituloSection">Catalogo de identificacion de los usuarios</h1>
+        <section id="sct-filtro">
+            <div class="filtro">
 
-        <section id="mainSection">
+                <input type="text" id="txt-filtro" placeholder="Buscar socios comerciales">
+            </div>
+        </section>
+        <section id="sct-cont-cartas">
 
-            <section id="primerBloque">
-
-                <div class="containers">
-                    <div class="imagesUsuarioLugar"></div><img src="img/FiccionGenero.jpg" alt="imagen del usuario" class="imagesUsuarios"><a href="formularioGenero.html" class="icons"><i class="fa-solid fa-gear fa-xl"></i></a>
-                    <h1 class="infoUsuario">Ficción</h1>
-
-                </div>
-                <div class="containers">
-                    <div class="imagesUsuarioLugar"></div><img src="img/crimenGenero.jpeg" alt="imagen del usuario" class="imagesUsuarios"><a href="formularioGenero.html" class="icons"><i class="fa-solid fa-gear fa-xl"></i></a>
-                    <h5 class="infoUsuario">Crimen</h5>
-
-                </div>
-                <div class="containers">
-                    <div class="imagesUsuarioLugar"></div><img src="img/NoFicciónGeneros.webp" alt="imagen del usuario" class="imagesUsuarios"><a href="formularioGenero.html" class="icons"><i class="fa-solid fa-gear fa-xl"></i></a>
-                    <h5 class="infoUsuario">No Ficción</h5>
-
-                </div>
-
-                <div class="containers">
-                    <div class="imagesUsuarioLugar"></div><img src="img/cienciaFiccion.jpg" alt="imagen del usuario" class="imagesUsuarios"><a href="formularioGenero.html" class="icons"><i class="fa-solid fa-gear fa-xl"></i></a>
-                    <h5 class="infoUsuario">Ciencia Ficción</h5>
-
-                </div>
-
-
-            </section>
-
-            <section id="segundoBloque">
-
-                <div class="containers">
-                    <div class="imagesUsuarioLugar"></div><img src="img/jovenAdultoGenero.jpg" alt="imagen del usuario" class="imagesUsuarios"><a href="formularioGenero.html" class="icons"><i class="fa-solid fa-gear fa-xl"></i></a>
-                    <h5 class="infoUsuario">Joven Adulto</h5>
-
-                </div>
-                <div class="containers">
-                    <div class="imagesUsuarioLugar"></div><img src="img/romanceGenero.jpg" alt="imagen del usuario" class="imagesUsuarios"><a href="formularioGenero.html" class="icons"><i class="fa-solid fa-gear fa-xl"></i></a>
-                    <h5 class="infoUsuario">Romance</h5>
-
-                </div>
-                <div class="containers">
-                    <div class="imagesUsuarioLugar"></div><img src="img/cienciaGenero.jpeg" alt="imagen del usuario" class="imagesUsuarios"><a href="formularioGenero.html" class="icons"><i class="fa-solid fa-gear fa-xl"></i></a>
-                    <h5 class="infoUsuario">Ciencia</h5>
-
-                </div>
-                <div class="containers">
-                    <div class="imagesUsuarioLugar"></div><img src="img/historiaPrueba.jpg" alt="imagen del usuario" class="imagesUsuarios"><a href="formularioGenero.html" class="icons"><i class="fa-solid fa-gear fa-xl"></i></a>
-                    <h5 class="infoUsuario">Historia</h5>
-
-                </div>
-
-
-            </section>
+        </section>
         </section>
 
 
@@ -122,8 +71,10 @@
         </footer>
 
 
-        <script src="https//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="js\editarPerfilLibro.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/servicioGeneral.js"></script>
+        <script src="js/listarGeneros.js"></script>
 
 </body>
 

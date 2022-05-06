@@ -300,3 +300,45 @@ ul li {
     right: 120px;
     top: 80px;
 }
+
+.carta {
+    border: 2px solid black;
+    width: 25%;
+    height: 200px;
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    width: 18%;
+    height: 500px;
+    margin: 50px;
+}
+
+.carta:hover {
+    background-color: #b34a12;
+    border: 6px solid black;
+    width: 22%;
+    height: 620;
+}
+
+#sct-cont-cartas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#sct-filtro {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#txt-filtro {
+    width: 200px;
+    height: 30px;
+}
