@@ -22,13 +22,13 @@ const mostrarDatos = () => {
 
             let nombreSocio = document.createElement('h1')
             nombreSocio.classList.add('nombre')
-            nombreSocio.textContent = llamarObjetos.nombreSocio
+            nombreSocio.textContent = `Socio comercial: ${llamarObjetos.nombreSocio}`
 
             let ubicacionSocio = document.createElement('p')
-            ubicacionSocio.textContent = llamarObjetos.ubicacionSocio
+            ubicacionSocio.textContent = `Ubicación: ${llamarObjetos.ubicacionSocio}`
 
             let telefonoSocio = document.createElement('p')
-            telefonoSocio.textContent = llamarObjetos.telefonoSocio
+            telefonoSocio.textContent = `Teléfono: ${llamarObjetos.telefonoSocio}`
 
 
 
