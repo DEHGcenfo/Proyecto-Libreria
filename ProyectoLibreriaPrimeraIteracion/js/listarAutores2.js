@@ -24,9 +24,11 @@ const mostrarDatos = () => {
             premiosGanados.textContent = `Premios ganados: ${llamarObjetos.premios}`
 
             let resennaAutor = document.createElement('p')
+            resennaAutor.classList.add('resennaAutor')
             resennaAutor.textContent = `Reseña: ${llamarObjetos.resena}`
 
             let detallesAutor = document.createElement('p')
+            detallesAutor.classList.add('detallesAutor')
             detallesAutor.textContent = `Detalles: ${llamarObjetos.detalles}`
 
             carta.appendChild(tituloAutor)

@@ -61,7 +61,7 @@ const mostrarDatos = (libroEncontrado) => {
 
     let precio = document.createElement('p')
     precio.classList.add('precio')
-    precio.textContent = `Precio: ${libroEncontrado.precio}`
+    precio.textContent = `Precio en colones: ${libroEncontrado.precio}`
 
 
     let formato = document.createElement('p')
