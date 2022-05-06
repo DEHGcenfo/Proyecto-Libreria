@@ -237,6 +237,15 @@ ul li {
 }
 
 .breadCrums {
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    bottom: 65px;
+    right: 65px;
+    font-size: 20px;
+    cursor: pointer;
     background-color: #c93117;
     border-bottom: 3px solid #1e555d;
     transition: all 400ms ease-out;
@@ -248,11 +257,10 @@ ul li {
 }
 
 .breadCrumbs {
-    border: 2px solid black;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     position: relative;
-    right: 120px;
+    left: 900px !important;
     top: 80px;
 }
 
